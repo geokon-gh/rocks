@@ -20,23 +20,21 @@ Through collaboration with Professor Löwemark I've narrowed down the study area
 
 [[./precipitation.png]]
 
-/Source: Royal irrigation Department Thailand/
+/Source: Royal irrigation Department Thailand/ [fn:ThaiWeather]
 
 - The first advantage is purely geographic; because Southern Thailand lies between the Indian ocean and the South China Sea it lies in the path of both the Summer monsoon (*SM*) and Winter monsoon (*WM*) with high precipitation coming from both systems. 
 
-- The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable and there are fewer confounding external factors such as found in other limate records. 
+- The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable [fn:Yuan2004], highly accurate [fn:Yuan2004] and there are fewer confounding external factors such as found in other climate records [fn:Wang2001]. They can be dated accurately through \nbsp{}^{230}Th and the climate record can be investigated through high resolution and repeatable \nbsp{}^{18}O measurements
 
 - I further suspect that karst tower will have much more easily characterizable dynamic when it comes to absorbing precipitation because of the limited amount of surrounding earth (and therefore due to a smaller water retention capacity will exhibit less histeresis).
 
 * Phase 1 : 1 Cave Replication
 
-The first phase would be a replication of the existing work done in the Hulu and Dongge caves in China by [Wang] Through Professor Blah Blah and his team's pioneering work they have manged to find a distinct link between changes in insolation (due to orbital forcing) and monsoon dynamics. 
+The first phase would be a replication of the existing work done in the Hulu and Dongge caves in China by Professor Y. J. Wang.
 
 [[./one-cave-wide.svg]]
 
 Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \nbsp{}^{18}O_{cave} relative to the smaller Hadley cell driven Winter monsoon. By measuring the changes in \nbsp{}^{18}O_{cave} that has precipitated out as carbonate/limestone on the stalagmites in the Dongge cave they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
-
-It will be useful for further discussion to quantify these values:
 
 If the amount of precipitation from the SM is S_{SM} and the WM is S_{WM} then 
 
@@ -46,13 +44,11 @@ If the amount of precipitation from the SM is S_{SM} and the WM is S_{WM} then
 
 [NEEDS MORE FORMULA MASSAGING HERE]
 
-Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at the cave site (ie S_{SM}/[S_{SM}+S_{WM}] \cong{} 0.8) and \nbsp{}^{18}O_{WM} > \nbsp{}^{18}O_{SM} the likely culprit to decreases in \nbsp{}^{18}O_{cave} was that the Summer monsoons become more severe. They found that there was a strong correlation between changes in \nbsp{}^{18}O_{cave} and changes in global insolation.
+Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie S_{SM}/[S_{SM}+S_{WM}] \cong{} 0.8) and \nbsp{}^{18}O_{WM} > \nbsp{}^{18}O_{SM} Wang et al. present the likely culprit for decreases in \nbsp{}^{18}O_{cave} as intensification of the SM. However, Yuan et al. contend that it's primarly due to changes in the fractionation due to differences in sea surface temperatures.
 
+All studies demonstrate a very high degree of replication between speleothems in the same cave [fn:Wang2001] - so different time bands easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only can detect climate anomoalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seem to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial [fn:Yuan2004].
 
-[Is it okay to steal figures here...?]
-
-
-Beyond orbital-scal changes, because of the fine detail provided by speleothems, they manage to find finner details like changes during the Younger Dryas and Heinrich Events. They also observed a good correspondence between the changes in \nbsp{}^{18}O and the climate records from Greenland cores.
+After showing a strong connection between the climate record in Greenland ice cores [fn:Wang2001] they then go on to show that there is strong connection between orbitaly induced changes in insolation and the amount of \nbsp{}^{18}O [fn:Yuan2004] [fn:Wang2005]
 
 The first phase would be simply to replicate this study in a karst tower cave to confirm that this method would provide similar results to the ones found in China and that insolation correlates with changes in \nbsp{}^{18}O.
 
@@ -65,19 +61,20 @@ The first phase would be simply to replicate this study in a karst tower cave to
 
 ** Issues
 #+BEGIN_QUOTE
-1. The difference in SM and WM \nbsp{}^{18}O in Thailand could much smaller than in China
+1. The difference in SM and WM \nbsp{}^{18}O in Thailand could be much smaller than in China
 2. \nbsp{}^{18}O is a purely one dimensional proxy - and cave systems don't easily provide others.
-3. An increase in \nbsp{}^{18}O can both correspond to an increase in SM precipitation or a decrease in WM precipitation
+3. An increase in \nbsp{}^{18}O can both correspond to an increase in SM precipitation or a decrease in WM precipitation. 
+4. It could also be in large part due to changes in sea surface temperatures - however this could be investigated in more detail by looking at other proxies
 #+END_QUOTE
 
 * Phase 2 : A 2 Cave System
-To address the lack of dimensionality in the \nbsp{}^{18}O measurements, I propose extending the previous method to two cave
+To address the lack of dimensionality in the \nbsp{}^{18}O measurements, and to resolve what's driving the changes in  \nbsp{}^{18}O I propose extending the previous method to two cave
 
 [[./two-cave-wide.svg]]
 
-The first cave would have similar characteristics to the one in China - with predominantly SM precipitation. The second cave would be selected to predominantly get NM precipiation. The cave site should be selected in close proximity to avoid issues due to differences in insolation, composition, etc.
+The first cave would have similar characteristics to the one in China - with predominantly SM precipitation. The second cave would be selected to predominantly get NM precipiation. The cave site should be selected in close proximity to avoid issues due to differences in insolation, composition, etc. Note that this may not be of great importance: the Hulu and Dongge caves are 1200 km apart and still have almost identical \nbsp{}^{18}O curves [fn:Yuan2004]. One major weakness of the Chinese experiment was that the cave sites got almost all their precipitation from the SM [fn:Wang2001]. A site that gets precipitation from both monsoon would provide more information - and since the \nbsp{}^{18}O values have already been shown to be incredily reliable - I think this wouldn't induce too much noise (due to interseasonal/non-monsoon rains) into the measurements
 
-And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny penninsula with strong WM rains on the nothern-eastern shore and strong SM rains on the southern-western shore - with a low mountain range in the middle providing the necessary rain shadow effect.
+And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny penninsula with strong WM rains on the nothern-eastern shore coming from the Gulf of Thailand and the South China Sea,  and strong SM rains on the southern-western shore coming from the Bay of Bengal and the Indian Ocean. An a low mountain range in the middle providing the necessary rain shadow effect.
 
 #+BEGIN_QUOTE
 /South Cave:/\\
@@ -152,3 +149,18 @@ A better understanding in conjunction with the study of the cave's precipitation
 #+END_QUOTE
 
 * Conclusion
+
+
+[fn:ThaiWeather]  Thai Meteorological Department http://climate.tmd.go.th/gge/ 
+
+[fn:Wang2001] A High-Resolution Absolute-Dated Late Pleistocene Monsoon Record from Hulu Cave, China 
+By Y. J. Wang, H. Cheng, R. L. Edwards, Z. S. An, J. Y. Wu, C.-C. Shen, J. A. Dorale
+Science14 Dec 2001 : 2345-2348
+
+[fn:Yuan2004] Timing, Duration, and Transitions of the Last Interglacial Asian Monsoon
+By Daoxian Yuan, Hai Cheng, R. Lawrence Edwards, Carolyn A. Dykoski, Megan J. Kelly, Meiliang Zhang, Jiaming Qing, Yushi Lin, Yongjin Wang, Jiangyin Wu, Jeffery A. Dorale, Zhisheng An, Yanjun Cai
+Science23 Apr 2004 : 575-578 
+
+[fn:Wang2005] The Holocene Asian Monsoon: Links to Solar Changes and North Atlantic Climate
+By Yongjin Wang, Hai Cheng, R. Lawrence Edwards, Yaoqi He, Xinggong Kong, Zhisheng An, Jiangying Wu, Megan J. Kelly, Carolyn A. Dykoski, Xiangdong Li
+Science06 May 2005 : 854-857 
