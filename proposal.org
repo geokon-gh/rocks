@@ -34,7 +34,7 @@ The first phase would be a replication of the existing work done in the Hulu and
 
 [[./one-cave-wide.svg]]
 
-Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \nbsp{}^{18}O_{cave} relative to the smaller Hadley cell driven Winter monsoon. By measuring the changes in \nbsp{}^{18}O_{cave} that has precipitated out as carbonate/limestone on the stalagmites in the Dongge cave they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
+Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \nbsp{}^{18}O_{cave} relative to the smaller Hadley cell driven Winter monsoon [fn:TheAsianMonsoon](p.30). By measuring the changes in \nbsp{}^{18}O_{cave} that has precipitated out as carbonate/limestone on the stalagmites in the Dongge cave they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
 
 If the amount of precipitation from the SM is S_{SM} and the WM is S_{WM} then 
 
@@ -44,7 +44,7 @@ If the amount of precipitation from the SM is S_{SM} and the WM is S_{WM} then
 
 [NEEDS MORE FORMULA MASSAGING HERE]
 
-Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie S_{SM}/[S_{SM}+S_{WM}] \cong{} 0.8) and \nbsp{}^{18}O_{WM} > \nbsp{}^{18}O_{SM} Wang et al. present the likely culprit for decreases in \nbsp{}^{18}O_{cave} as intensification of the SM. However, Yuan et al. contend that it's primarly due to changes in the fractionation due to differences in sea surface temperatures.
+Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie S_{SM}/[S_{SM}+S_{WM}] \cong{} 0.8) and \nbsp{}^{18}O_{WM} > \nbsp{}^{18}O_{SM} Wang et al. present the likely culprit for decreases in \nbsp{}^{18}O_{cave} as intensification of the SM. However, Yuan et al. contend that it's primarly due to changes in the fractionation due to differences in sea surface temperatures. That said, this conclusion doesn't seem to reoccur in the literature.
 
 All studies demonstrate a very high degree of replication between speleothems in the same cave [fn:Wang2001] - so different time bands easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only can detect climate anomoalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seem to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial [fn:Yuan2004].
 
@@ -164,3 +164,5 @@ Science23 Apr 2004 : 575-578
 [fn:Wang2005] The Holocene Asian Monsoon: Links to Solar Changes and North Atlantic Climate
 By Yongjin Wang, Hai Cheng, R. Lawrence Edwards, Yaoqi He, Xinggong Kong, Zhisheng An, Jiangying Wu, Megan J. Kelly, Carolyn A. Dykoski, Xiangdong Li
 Science06 May 2005 : 854-857 
+
+[fn:TheAsianMonsoon] Clift, P., & Plumb, R. (2008). The Asian Monsoon: Causes, History and Effects. Cambridge: Cambridge University Press. doi:10.1017/CBO9780511535833
