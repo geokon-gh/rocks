@@ -47,9 +47,9 @@ c_{cave}(t) = [ P_{SM}(t)\times{}f_{SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{WM}\
 
 Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie. *f_{SM}\approx{}0.8* and *f_{WM}\approx{}0.2*) Wang et al. present the likely culprit for decreases in the in \nbsp{}^{18}O in the cave as an intensification of the SM. [fn:ExtraO18Driver] However they stop short of actually explicit attempting to quantifying monsoon intensities. Shifts in the \nbsp{}^{18}O concentrations in the cave are simply interpreted as increases or decreases in the SM strength.
 
-However this analysis was sufficient to demonstrate an incridbly strong connections between the climate record in Greenland ice cores [fn:Wang2001] and the SM. They then go on to show in subsequent work that there is a strong connection between orbitaly induced changes in insolation and the amount of \nbsp{}^{18}O in the cave [fn:Yuan2004] [fn:Wang2005]
+However this analysis was sufficient to demonstrate an incredbly strong connections between the climate record in Greenland ice cores [fn:Wang2001] and the SM. They then go on to show in subsequent work that there is a strong connection between orbitaly induced changes in insolation and the amount of \nbsp{}^{18}O in the cave [fn:Yuan2004] [fn:Wang2005]
 
-It's important to note here that all their studies demonstrated a surprisingly high degree of replication between speleothems in the same cave [fn:Wang2001] - so different time bands would easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only could detect climate anomoalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seemed to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial [fn:Yuan2004]. This level of detail is very hard to achieve through other climate proxies at the time scales involved.
+It's important to note here that all their studies demonstrated a surprisingly high degree of replication between speleothems in the same cave [fn:Wang2001] - so different time bands would easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only could detect climate anomalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seemed to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial [fn:Yuan2004]. This level of detail is very hard to achieve through other climate proxies at the time scales involved.
 
 The first phase would be simply to replicate this study in a karst tower cave to confirm that this method would provide similar results to the ones found in China and that insolation correlates with changes in \nbsp{}^{18}O.
 
@@ -79,13 +79,13 @@ To resolve the \nbsp{}^{18}O concentrations of the SM and WM, I propose extendin
 
 The /first/ cave would have similar characteristics to the one in China - with predominantly SM precipitation. 
 
-The /second/ cave would be selected to predominantly get WM precipitation. The cave site should be selected in close proximity to the first in order to avoid issues caused by differences in insolation, composition, etc [fn:ExtraProximity] . One major limitation of the Chinese experiment was the cave sites recieved almost all their precipitation from the SM [fn:Wang2001] and for all intents and purposes WM precipiation was absent. A site that gets precipitation from both monsoons would allow me to investigate both phenomena simultaenously.
+The /second/ cave would be selected to predominantly get WM precipitation. The cave site should be selected in close proximity to the first in order to avoid issues caused by differences in insolation, composition, etc [fn:ExtraProximity] . One major limitation of the Chinese experiment was the cave sites received almost all their precipitation from the SM [fn:Wang2001] and for all intents and purposes WM precipiation was absent. A site that gets precipitation from both monsoons would allow me to investigate both phenomena simultaneously.
 
 And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny peninsula with strong WM rains on the northern-eastern shore coming from the Gulf of Thailand and the South China Sea,  and strong SM rains on the southern-western shore coming from the Bay of Bengal and the Indian Ocean. A low mountain range in the middle providing the necessary rain shadow effect for both sides.
 
-I expect that measuring precipitation from two monsoons simultaenously will lead to an increase in noise due to interseasonal/non-monsoon rains. However, \nbsp{}^{18}O values have already been shown to be incredibly reliable so I expect the noise to be numerically tolerable and the redundancy of two caves would help verify the reliability.
+I expect that measuring precipitation from two monsoons simultaneously will lead to an increase in noise due to interseasonal/non-monsoon rains. However, \nbsp{}^{18}O values have already been shown to be incredibly reliable so I expect the noise to be numerically tolerable and the redundancy of two caves would help verify the reliability.
 
-Similary as before we can write out each cave's isotope concentration. 
+As before we can write out each cave's isotope concentration. 
 #+BEGIN_QUOTE
 /South Cave:/\\
 c_{1}(t) = [ P_{SM}(t)\times{}f_{1,SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{1,WM}\times{}c_{WM} ] / [ P_{SM}\times{}f_{1,SM} + P_{WM}(t)\times{}f_{1,WM} ] \\
@@ -96,7 +96,7 @@ c_{1}(t) = [ P_{SM}(t)\times{}f_{2,SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{2,WM}
 - P_{SM|WM}(t) :: Past precipitation during the SM|WM
 - f_{1|2,SM|WM} :: the fraction of the precipitation that goes into the cave 1|2 from the SM|WM
 #+END_QUOTE
-The *f* values are now driven by the rain shadow effect of the mountain range. They can be calculate either satistically using historical weather data or by setting up a rain gauge at each cave and watching over several seasons.
+The *f* values are now driven by the rain shadow effect of the mountain range. They can be calculate either statistically using historical weather data or by setting up a rain gauge at each cave and watching over several seasons.
 
 Now we rearrange the equation for the Southern Cave:
 #+BEGIN_QUOTE
@@ -118,7 +118,7 @@ The /left hand side/ is a constant based on measured values. We assume it's a fu
 
 The /right hand side/ is a series of our isotope measurements (c_1(t) c_2(t)) and a two unknown values c_{WM} and c_{SM} that represent the isotope rations in each monsoon. Now this becomes a simple optimization problem of selecting an estimate for c_{WM} and c_{SM} such that the resulting right side values for different measured isotope values c_{1|2}(t_{n}) are as close to the left side fraction as possible. This is in effect done with a linear regression (taking the logarithm of the above equation linearizes the problem) 
 
-While c_{WM} and c_{SM} are constant in the short to medium term they nonetheless they will evolve slowly over time and therefore the estimates need to be periodically updated. In practice this is probably best accomplished with a sliding window where estimate are continiously updated across the historical record.
+While c_{WM} and c_{SM} are constant in the short to medium term they nonetheless they will evolve slowly over time and therefore the estimates need to be periodically updated. In practice this is probably best accomplished with a sliding window where estimate are continuously updated across the historical record.
 
 ** Expected results
 #+BEGIN_QUOTE
@@ -155,12 +155,12 @@ then, if the dynamics are not too complicated, we could attempt to build an appr
 f^{-1}(drip_{cave}) \rightarrow{} precipiation
 #+END_QUOTE
 
-In the context of reconstructing monsoon histories, this would help add a correcting factors. If there is a noteable nonlinearity then it should become readily apparent in the two cave phase as the changes in isotope won't be mirrored across the two caves. That said, fully characterizing how to leverage these nonlinearities to tease out changes in the SM and WM intensity would be a challenging problem to solve.
+In the context of reconstructing monsoon histories, this would help add a correcting factors. If there is a notable nonlinearity then it should become readily apparent in the two cave phase as the changes in isotope won't be mirrored across the two caves. That said, fully characterizing how to leverage these nonlinearities to tease out changes in the SM and WM intensity would be a challenging problem to solve.
 
 ** Expected result
 #+BEGIN_QUOTE
 1. A better understanding of how caves affect the precipitation record in speleothems
-2. Could potentially allow one to recontstruct surface precipitation values from cave drip measurements
+2. Could potentially allow one to reconstruct surface precipitation values from cave drip measurements
 3. Might in theory make it possible to use a two cave study to separate out the SM and WM dynamics
 #+END_QUOTE
 
@@ -203,13 +203,13 @@ Also, looking at where the precipitation originates - both its origin and its pa
 #+END_QUOTE
 
 * Conclusion
-The project as presented is by no means exhaustive and should primarily serve as a guide to the general thrust of the project envisioned for my PhD thesis. While it may at a glance give the false impression of a chain of dependencies, where each phase depends on the results of the ones that come before it, tangential supporting evidence and alternate avenues of inquiry have been omitted for the sake of brevity. One can easily imagine other proxies like local lake sedement or speleothem geochemistry helping further disentangle the historical monsoon puzzle [fn:ExtraLayers]. I hope it is also evident that each piece strives to answer some questions of its own - independent of any larger goal.
+The project as presented is by no means exhaustive and should primarily serve as a guide to the general thrust of the project envisioned for my PhD thesis. While it may at a glance give the false impression of a chain of dependencies, where each phase depends on the results of the ones that come before it, tangential supporting evidence and alternate avenues of inquiry have been omitted for the sake of brevity. One can easily imagine other proxies like local lake sediment or speleothem geochemistry helping further disentangle the historical monsoon puzzle [fn:ExtraLayers]. I hope it is also evident that each piece strives to answer some questions of its own - independent of any larger goal.
 
 Thank you once again for reviewing my application. If you have any further questions or would like for an in-person meeting/interview, please don't hesitate to get in touch
 
 * Addendum: COVID
 #+BEGIN_QUOTE
-Naturally the nature of the project requires travelling to Thailand and doing research on-the-ground. With the current state of the world wide pandemic this presents some challenges and may raise concerns for the committee about the viability of the proposal as-presented. Fortunately at the time of submission the Corona virus situation in Thailand is stable with no new cases since mid-May. The local government is in the processes of implementing a protocol for foreigners to be able to arrive and quarantine before freely moving around the country. Furthermore, much of the meteorological and geographic work can be done just as easily from Taipei as from a hammock in Thailand. Professor Löwemark already has several speleothem samples available (with more on the way) on which initial measurements can be done and methods can be developed. So even in the most pessimistic scenario a large fraction of the work should be doable ahead of time from Taipei. While unfortunate and inconvenient, I don't forsee the pandemic being a major impediment to this project
+Naturally the nature of the project requires traveling to Thailand and doing research on-the-ground. With the current state of the world wide pandemic this presents some challenges and may raise concerns for the committee about the viability of the proposal as-presented. Fortunately at the time of submission the Corona virus situation in Thailand is stable with no new cases since mid-May. The local government is in the processes of implementing a protocol for foreigners to be able to arrive and quarantine before freely moving around the country. Furthermore, much of the meteorological and geographic work can be done just as easily from Taipei as from a hammock in Thailand. Professor Löwemark already has several speleothem samples available (with more on the way) on which initial measurements can be done and methods can be developed. So even in the most pessimistic scenario a large fraction of the work should be doable ahead of time from Taipei. While unfortunate and inconvenient, I don't foresee the pandemic being a major impediment to this project
 #+END_QUOTE
 
 [fn:ThaiWeather]  Thai Meteorological Department\\
