@@ -18,27 +18,36 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc477fc5">Introduction</a></li>
-<li><a href="#orge7972ea">Phase 1 : Shadows in a Cave</a>
+<li><a href="#org29376b0">Introduction</a></li>
+<li><a href="#orgcf1299b">Phase 1 : One Cave Replication</a>
 <ul>
-<li><a href="#org66c0ba6">Expected results</a></li>
-<li><a href="#orgf9dc1c6">Issues</a></li>
+<li><a href="#org928be27">Expected results</a></li>
+<li><a href="#orgea92306">Potential Issues</a></li>
+<li><a href="#org2b63275">Unresolved questions</a></li>
 </ul>
 </li>
-<li><a href="#org8b8df48">Phase 2 : A two-cave problem</a></li>
-<li><a href="#org5f00363">Phase 3 : Trickle Down Caveanomics</a>
+<li><a href="#org7c0fa17">Phase 2 : A two-cave problem</a>
 <ul>
-<li><a href="#org87619c6">Expected result</a></li>
-<li><a href="#org3013414">Issues</a></li>
+<li><a href="#orga9381d1">Expected results</a></li>
+<li><a href="#orge421c4d">Potential Issues</a></li>
+<li><a href="#orgfd37439">Unresolved questions</a></li>
 </ul>
 </li>
-<li><a href="#orgeaf0a22">Phase 4 : Let's check the weather</a>
+<li><a href="#org23bb536">Phase 3 : Trickle Down Caveanomics</a>
 <ul>
-<li><a href="#orgc80e0c5">Expected result</a></li>
-<li><a href="#org6cf09c7">Issues</a></li>
+<li><a href="#org94c23dd">Expected result</a></li>
+<li><a href="#orgc5ffaa1">Potential Issues</a></li>
+<li><a href="#org0bead8b">Unanswered Questions</a></li>
 </ul>
 </li>
-<li><a href="#orgeb68e93">Conclusion</a></li>
+<li><a href="#org144ebc8">Phase 4 : Let's check the weather</a>
+<ul>
+<li><a href="#org3923384">Expected result</a></li>
+<li><a href="#org9697f2b">Issues</a></li>
+</ul>
+</li>
+<li><a href="#orgd52757f">Conclusion</a></li>
+<li><a href="#org0bd6f53">Addendum: COVID</a></li>
 </ul>
 </div>
 </div>
@@ -47,18 +56,18 @@ Dear Members of the PhD selection committee,
 </p>
 
 <p>
-Thank you for taking the time to review my application for a PhD at your department. I've had the privilege to work with Professor Ludvig Löwemark over the past year and have greatly enjoyed learning from him and helping his team improve their workflow. I deeply appreciate the mentorship he has provided me, and I hope you allow me to continue the work I've been doing. The PhD would give me the framework to design and implement a larger multifaceted multiyear project. It would also allow me to continue my education in the geosciences and to gain from Professor Löwemark's extensive experience and fantastic mentorship. I feel my background in the hard sciences, industry and electronics would complement his field experience and brings a unique outside perspective and skillset to Professor Löwemark's lab and the department as a whole.
+Thank you for taking the time to review my application for a PhD at your department. I've had the privilege to work with Professor Ludvig Löwemark over the past year and I've greatly enjoyed learning from him while helping his team improve their workflow. I deeply appreciate the mentorship he has provided me. Through the PhD program I would have the framework to design and implement a larger multifaceted multiyear project. It would also allow me to continue my education in the geosciences and to gain from Professor Löwemark's extensive experience. I feel my background in the hard sciences, industry and electronics would complement his field experience and brings a unique outside perspective and skillset to Professor Löwemark's lab and to the department as a whole.
 </p>
 
 <p>
 Below is my proposal for a research concept that would take several years and would build on Professor Löwemark's ongoing work in the Thailand peninsula. All ideas presented are my own unless otherwise indicated.
 </p>
 
-<div id="outline-container-orgc477fc5" class="outline-2">
-<h2 id="orgc477fc5">Introduction</h2>
-<div class="outline-text-2" id="text-orgc477fc5">
+<div id="outline-container-org29376b0" class="outline-2">
+<h2 id="org29376b0">Introduction</h2>
+<div class="outline-text-2" id="text-org29376b0">
 <p>
-The variability of the annual Asian monsoon's intensity has been a major driver behind the change in climate in the region. These changes over the centuries have precipitated shifts in biomes, have triggered the collapse of empires and the displacement of peoples. Understanding the dynamics and evolution of monsoons is central to anticipating future trends for this region's climate. With an ever more rapidly changing climate the need to understand these systems becomes more acute. The answer to these questions lies in the climate record.
+The variability of the annual Asian monsoon's intensity has been a major driver behind the change in climate in the region. These changes over the centuries have precipitated shifts in biomes, have triggered the historic collapse of states and the displacement of peoples. Understanding the dynamics and evolution of monsoons is central to anticipating future trends for this region's climate. With an ever more rapidly changing climate the need to understand these systems becomes more acute. The answer to these questions lies in the climate record.
 </p>
 
 <p>
@@ -66,7 +75,7 @@ In this proposal I present a general framework for improving our understanding o
 </p>
 
 <p>
-Through collaboration with Professor Löwemark I've focused the study area primarily to the caves on Southern Thailand. This both compliments Professor Löwemark's ongoing work as well as leverages his existing contacts and experience in the area. However, the choice is not simply of convenience but presents several crucial practical advantages that are unique to the Malay Peninsula. 
+Through collaboration with Professor Löwemark I've focused the study area primarily to the caves on Southern Thailand. This both compliments Professor Löwemark's ongoing work as well as leverages his existing contacts and experience in the area. However, the choice is not simply of convenience but one that presents several crucial practical advantages over alternatives and that are rather unique to the Malay Peninsula. 
 </p>
 
 
@@ -82,18 +91,18 @@ Through collaboration with Professor Löwemark I've focused the study area prima
 <ul class="org-ul">
 <li>The first advantage is purely geographic; because Southern Thailand lies between the Indian ocean and the South China Sea it lies in the path of both the Summer monsoon (<b>SM</b>) and Winter monsoon (<b>WM</b>) with high precipitation coming from both systems.</li>
 
-<li>The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, highly accurate <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup> and there are fewer confounding external factors such as found in other climate records <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. They can be dated accurately through &nbsp;<sup>230</sup>Th and the climate record can be investigated through high resolution and repeatable &nbsp;<sup>18</sup>O measurements</li>
+<li>The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, highly accurate <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup> and there are fewer confounding external factors such as found in other climate records <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. They can be dated accurately through &nbsp;<sup>230</sup>Th and the climate record can be investigated through high resolution &nbsp;<sup>18</sup>O measurements</li>
 
-<li>I further suspect that karst towers will have much more easily characterizable dynamic when it comes to absorbing precipitation because of the limited amount of surrounding earth (and therefore due to a smaller water retention capacity will exhibit less histeresis).</li>
+<li>I further suspect that karst towers, relative to other cave systems, will have much more easily characterizable dynamic when it comes to absorbing precipitation because of the limited amount of surrounding earth (and therefore due to a smaller water retention capacity will exhibit less histeresis).</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge7972ea" class="outline-2">
-<h2 id="orge7972ea">Phase 1 : Shadows in a Cave</h2>
-<div class="outline-text-2" id="text-orge7972ea">
+<div id="outline-container-orgcf1299b" class="outline-2">
+<h2 id="orgcf1299b">Phase 1 : One Cave Replication</h2>
+<div class="outline-text-2" id="text-orgcf1299b">
 <p>
-The first phase of the project would be a replication of the existing work done in the Hulu and Dongge caves in China by Professor Cheng Hai's team.
+The first phase of the project would be a replication of the existing work done in the Hulu and Dongge caves in China by Professor Cheng Hai and his team.
 </p>
 
 
@@ -122,18 +131,16 @@ c<sub>cave</sub>(t) = [ P<sub>SM</sub>(t)&times;f<sub>SM</sub>&times;c<sub>SM</s
 </dl>
 </blockquote>
 
-
-
 <p>
-Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup>, while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites. Wang et al. present the likely culprit for decreases in the in &nbsp;<sup>18</sup>O in the cave as intensification of the SM. However, Yuan et al. contend that it's primarily due to changes in the fractionation due to differences in sea surface temperatures. That said, this conclusion doesn't seem to reoccur in the literature.
+Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup>, while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie. <b>f<sub>SM</sub>&asymp;0.8</b> and <b>f<sub>WM</sub>&asymp;0.2</b>) Wang et al. present the likely culprit for decreases in the in &nbsp;<sup>18</sup>O in the cave as an intensification of the SM. <sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup> However they stop short of actually explicit attempting to quantifying monsoon intensities. Shifts in the &nbsp;<sup>18</sup>O concentrations in the cave are simply interpreted as increases or decreases in the SM strength.
 </p>
 
 <p>
-All studies demonstrate a very high degree of replication between speleothems in the same cave <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup> - so different time bands easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only can detect climate anomoalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seem to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup>.
+However this analysis was sufficient to demonstrate an incridbly strong connections between the climate record in Greenland ice cores <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup> and the SM. They then go on to show in subsequent work that there is a strong connection between orbitaly induced changes in insolation and the amount of &nbsp;<sup>18</sup>O in the cave <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup> <sup>, </sup><sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup>
 </p>
 
 <p>
-After showing a strong connection between the climate record in Greenland ice cores <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup> they go on to show a strong connection between orbitaly induced changes in insolation and the amount of &nbsp;<sup>18</sup>O <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup> <sup>, </sup><sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>
+It's important to note here that all their studies demonstrated a surprisingly high degree of replication between speleothems in the same cave <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup> - so different time bands would easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only could detect climate anomoalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seemed to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup>. This level of detail is very hard to achieve through other climate proxies at the time scales involved.
 </p>
 
 <p>
@@ -141,39 +148,49 @@ The first phase would be simply to replicate this study in a karst tower cave to
 </p>
 </div>
 
-<div id="outline-container-org66c0ba6" class="outline-3">
-<h3 id="org66c0ba6">Expected results</h3>
-<div class="outline-text-3" id="text-org66c0ba6">
+<div id="outline-container-org928be27" class="outline-3">
+<h3 id="org928be27">Expected results</h3>
+<div class="outline-text-3" id="text-org928be27">
 <blockquote>
 <ol class="org-ol">
 <li>a very high resolution of information</li>
 <li>ability to detect very small changes in climate</li>
-<li>very repeatable results with values between different stalagmites matching incredibly closely</li>
+<li>very repeatable results with values between different stalagmites matching closely</li>
 </ol>
 </blockquote>
 </div>
 </div>
 
-<div id="outline-container-orgf9dc1c6" class="outline-3">
-<h3 id="orgf9dc1c6">Issues</h3>
-<div class="outline-text-3" id="text-orgf9dc1c6">
+<div id="outline-container-orgea92306" class="outline-3">
+<h3 id="orgea92306">Potential Issues</h3>
+<div class="outline-text-3" id="text-orgea92306">
 <blockquote>
 <ol class="org-ol">
 <li>The difference in SM and WM &nbsp;<sup>18</sup>O in Thailand could be much smaller than in China</li>
+<li>Interseasonal rains would present noise in the isotope variability - so the signal would not be as strong as in a SM dominated area</li>
+</ol>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org2b63275" class="outline-3">
+<h3 id="org2b63275">Unresolved questions</h3>
+<div class="outline-text-3" id="text-org2b63275">
+<blockquote>
+<ol class="org-ol">
 <li>&nbsp;<sup>18</sup>O is a purely one dimensional proxy - and cave systems don't easily provide others.</li>
-<li>An increase in &nbsp;<sup>18</sup>O can both correspond to an increase in SM precipitation or a decrease in WM precipitation.</li>
-<li>It could also be in large part due to changes in sea surface temperatures - however this could be investigated in more detail by looking at other proxies</li>
+<li>The &nbsp;<sup>18</sup>O concentrations of the SM and WM (<b>c<sub>SM|WM</sub></b>) are not known. Modern values can be calculated but historic values are not directly available</li>
+<li>An increase in &nbsp;<sup>18</sup>O can both correspond to an increase in SM precipitation or a decrease in WM precipitation (this holds true for the original studies in China as well)</li>
 </ol>
 </blockquote>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org8b8df48" class="outline-2">
-<h2 id="org8b8df48">Phase 2 : A two-cave problem</h2>
-<div class="outline-text-2" id="text-org8b8df48">
+<div id="outline-container-org7c0fa17" class="outline-2">
+<h2 id="org7c0fa17">Phase 2 : A two-cave problem</h2>
+<div class="outline-text-2" id="text-org7c0fa17">
 <p>
-To address the lack of dimensionality in the &nbsp;<sup>18</sup>O measurements, and to resolve what's driving the changes in  &nbsp;<sup>18</sup>O I propose extending the previous method to two cave
+To resolve the &nbsp;<sup>18</sup>O concentrations of the SM and WM, I propose extending the previous method to two caves
 </p>
 
 
@@ -184,15 +201,23 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 <p>
-The first cave would have similar characteristics to the one in China - with predominantly SM precipitation. The second cave would be selected to predominantly get NM precipitation. The cave site should be selected in close proximity to the first in order to avoid issues caused by differences in insolation, composition, etc. Note that this may not be of significant importance: the Hulu and Dongge caves are 1200 km apart and still have almost identical &nbsp;<sup>18</sup>O curves <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup>. One major weakness of the Chinese experiment was the cave sites recieved almost all their precipitation from the SM <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup>. A site that gets precipitation from both monsoons would provide more information - and since the &nbsp;<sup>18</sup>O values have already been shown to be incredibly reliable - I think this wouldn't induce too much noise (due to interseasonal/non-monsoon rains) into the measurements
+The <i>first</i> cave would have similar characteristics to the one in China - with predominantly SM precipitation. 
 </p>
 
 <p>
-And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny peninsula with strong WM rains on the northern-eastern shore coming from the Gulf of Thailand and the South China Sea,  and strong SM rains on the southern-western shore coming from the Bay of Bengal and the Indian Ocean. A low mountain range in the middle providing the necessary rain shadow effect.
+The <i>second</i> cave would be selected to predominantly get WM precipitation. The cave site should be selected in close proximity to the first in order to avoid issues caused by differences in insolation, composition, etc <sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup> . One major limitation of the Chinese experiment was the cave sites recieved almost all their precipitation from the SM <sup><a id="fnr.3.100" class="footref" href="#fn.3">3</a></sup> and for all intents and purposes WM precipiation was absent. A site that gets precipitation from both monsoons would allow me to investigate both phenomena simultaenously.
 </p>
 
 <p>
-For the moment we make the simplifying assumption, as before, that the monsoon isotope concentration doesn't change with time.
+And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny peninsula with strong WM rains on the northern-eastern shore coming from the Gulf of Thailand and the South China Sea,  and strong SM rains on the southern-western shore coming from the Bay of Bengal and the Indian Ocean. A low mountain range in the middle providing the necessary rain shadow effect for both sides.
+</p>
+
+<p>
+I expect that measuring precipitation from two monsoons simultaenously will lead to an increase in noise due to interseasonal/non-monsoon rains. However, &nbsp;<sup>18</sup>O values have already been shown to be incredibly reliable so I expect the noise to be numerically tolerable and the redundancy of two caves would help verify the reliability.
+</p>
+
+<p>
+Similary as before we can write out each cave's isotope concentration. 
 </p>
 <blockquote>
 <p>
@@ -208,11 +233,12 @@ c<sub>1</sub>(t) = [ P<sub>SM</sub>(t)&times;f<sub>2,SM</sub>&times;c<sub>SM</su
 <dt>f<sub>1|2,SM|WM</sub></dt><dd>the fraction of the precipitation that goes into the cave 1|2 from the SM|WM</dd>
 </dl>
 </blockquote>
-<ul class="org-ul">
-<li>the <b>f</b> values we can calculate satistically either using historical weather data or using setting up a rain gauge at each cave and watching over several seasons.</li>
-</ul>
 <p>
-Rearranging the equation for the Southern Cave:
+The <b>f</b> values are now driven by the rain shadow effect of the mountain range. They can be calculate either satistically using historical weather data or by setting up a rain gauge at each cave and watching over several seasons.
+</p>
+
+<p>
+Now we rearrange the equation for the Southern Cave:
 </p>
 <blockquote>
 <p>
@@ -223,7 +249,7 @@ P<sub>SM</sub>(t)/P<sub>WM</sub>(t) = [f<sub>1,WM</sub>/f<sub>1,SM</sub>]&times;
 </p>
 </blockquote>
 <p>
-Similarly for the Northern Cave:
+Similarly for the Northern Cave we get:
 </p>
 <blockquote>
 <p>
@@ -231,7 +257,7 @@ P<sub>SM</sub>(t)/P<sub>WM</sub>(t) = [f<sub>2,WM</sub>/f<sub>2,SM</sub>]&times;
 </p>
 </blockquote>
 <p>
-We can set these equal to each other and rearrange
+With both left terms identical we can set these equal to each other and rearrange
 </p>
 <blockquote>
 <p>
@@ -240,19 +266,62 @@ We can set these equal to each other and rearrange
 </p>
 </blockquote>
 <p>
-The left is a constant and the right is a series of our measurements (c<sub>1</sub>(t) c<sub>2</sub>(t)) so this a simple optimization problem to solve for c<sub>WM</sub> and c<sub>SM</sub>. (This can be further simplified by taking the logarithm of both sides)
-</p>
-</div>
-</div>
-<div id="outline-container-org5f00363" class="outline-2">
-<h2 id="org5f00363">Phase 3 : Trickle Down Caveanomics</h2>
-<div class="outline-text-2" id="text-org5f00363">
-<p>
-One thing not mentioned in the previous discussions has been the effect of the actual cave system. This is a topic of ongoing research by Professor Löwemark and complements this proposed project.
+The <i>left hand side</i> is a constant based on measured values. We assume it's a function of the local geography and is time invariant on the time scales in question. <sup><a id="fnr.8" class="footref" href="#fn.8">8</a></sup>
 </p>
 
 <p>
-Professor Löwemark is currently investigating the response of the cave system to the intensity of rain above it. As he has theorized, several possible mechanisms could be at play:
+The <i>right hand side</i> is a series of our isotope measurements (c<sub>1</sub>(t) c<sub>2</sub>(t)) and a two unknown values c<sub>WM</sub> and c<sub>SM</sub> that represent the isotope rations in each monsoon. Now this becomes a simple optimization problem of selecting an estimate for c<sub>WM</sub> and c<sub>SM</sub> such that the resulting right side values for different measured isotope values c<sub>1|2</sub>(t<sub>n</sub>) are as close to the left side fraction as possible. This is in effect done with a linear regression (taking the logarithm of the above equation linearizes the problem) 
+</p>
+
+<p>
+While c<sub>WM</sub> and c<sub>SM</sub> are constant in the short to medium term they nonetheless they will evolve slowly over time and therefore the estimates need to be periodically updated. In practice this is probably best accomplished with a sliding window where estimate are continiously updated across the historical record.
+</p>
+</div>
+
+<div id="outline-container-orga9381d1" class="outline-3">
+<h3 id="orga9381d1">Expected results</h3>
+<div class="outline-text-3" id="text-orga9381d1">
+<blockquote>
+<ol class="org-ol">
+<li>We can reconstruct the historical isotope concentration of the SM and WM</li>
+<li>If monsoon isotope concentration can be correlated with precipitation or other factors then we can make broader conclusions</li>
+</ol>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orge421c4d" class="outline-3">
+<h3 id="orge421c4d">Potential Issues</h3>
+<div class="outline-text-3" id="text-orge421c4d">
+<blockquote>
+<ol class="org-ol">
+<li>Again, interseasonal rains and the fact that we have two monsoons could potentially increase the noise level</li>
+</ol>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgfd37439" class="outline-3">
+<h3 id="orgfd37439">Unresolved questions</h3>
+<div class="outline-text-3" id="text-orgfd37439">
+<blockquote>
+<ol class="org-ol">
+<li>Again, an increase in &nbsp;<sup>18</sup>O could both correspond to an increase in SM precipitation or a decrease in WM precipitation. This remains unresolved and a two cave system, counterintuitively, doesn't give you any direct insight into this. If c<sub>WM</sub> and c<sub>SM</sub> are correlated with P<sub>SM</sub> and P<sub>WM</sub> then maybe we could say more - but this would need to be confirmed by some external method/proxy</li>
+</ol>
+</blockquote>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org23bb536" class="outline-2">
+<h2 id="org23bb536">Phase 3 : Trickle Down Caveanomics</h2>
+<div class="outline-text-2" id="text-org23bb536">
+<p>
+To attack the problem of trying to separate out the SM's and WM's dynamics we can try to find some nonlinearities in how the cave records the precipitation.
+</p>
+
+<p>
+Professor Löwemark is currently, building on previous work<sup><a id="fnr.9" class="footref" href="#fn.9">9</a></sup>, investigating the response of the cave system to the intensity of rain above it. As he has theorized, several possible mechanisms could be at play:
 </p>
 <ol class="org-ol">
 <li>A heavy rain above a cave system quickly saturates a certain above-ground layer on the karst tower and past a certain point rain starts to pool and pour past the cave system as surface water.</li>
@@ -275,35 +344,48 @@ f(precipitation) &rarr; drip<sub>cave</sub>
 </p>
 </blockquote>
 <p>
-If the dynamics are not too complicated, we could then hope to build an approximate inverse transfer function 
+then, if the dynamics are not too complicated, we could attempt to build an approximate inverse transfer function
 </p>
 <blockquote>
 <p>
-f<sup>-1</sup>(drip<sub>cave</sub> &rarr; precipiation
+f<sup>-1</sup>(drip<sub>cave</sub>) &rarr; precipiation
 </p>
 </blockquote>
 
 <p>
-In the context of reconstructing monsoon histories, this would help add a correcting factors. At the very basic level I would expect that increases in monsoon precipitation would not linearly lead to increases in cave drip.
+In the context of reconstructing monsoon histories, this would help add a correcting factors. If there is a noteable nonlinearity then it should become readily apparent in the two cave phase as the changes in isotope won't be mirrored across the two caves. That said, fully characterizing how to leverage these nonlinearities to tease out changes in the SM and WM intensity would be a challenging problem to solve.
 </p>
 </div>
 
-<div id="outline-container-org87619c6" class="outline-3">
-<h3 id="org87619c6">Expected result</h3>
-<div class="outline-text-3" id="text-org87619c6">
+<div id="outline-container-org94c23dd" class="outline-3">
+<h3 id="org94c23dd">Expected result</h3>
+<div class="outline-text-3" id="text-org94c23dd">
 <blockquote>
 <ol class="org-ol">
 <li>A better understanding of how caves affect the precipitation record in speleothems</li>
-<li>Could potentially allow one to recontstruct surface precipitation values</li>
-<li>This completements ongoing work</li>
+<li>Could potentially allow one to recontstruct surface precipitation values from cave drip measurements</li>
+<li>Might in theory make it possible to use a two cave study to separate out the SM and WM dynamics</li>
 </ol>
 </blockquote>
 </div>
 </div>
 
-<div id="outline-container-org3013414" class="outline-3">
-<h3 id="org3013414">Issues</h3>
-<div class="outline-text-3" id="text-org3013414">
+<div id="outline-container-orgc5ffaa1" class="outline-3">
+<h3 id="orgc5ffaa1">Potential Issues</h3>
+<div class="outline-text-3" id="text-orgc5ffaa1">
+<blockquote>
+<ol class="org-ol">
+<li>The cave response could be mostly linear and give us no additional information</li>
+<li>Measuring a couple of seasons of cave drip and local precipitation could end up being insufficient to characterize the cave transfer function</li>
+<li>The transfer function could be too complex to build a reliable inverse</li>
+</ol>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org0bead8b" class="outline-3">
+<h3 id="org0bead8b">Unanswered Questions</h3>
+<div class="outline-text-3" id="text-org0bead8b">
 <blockquote>
 <ol class="org-ol">
 <li>The effects are on the weather-scale - and they will need to be somehow extrapolated to the climate scale</li>
@@ -312,44 +394,46 @@ In the context of reconstructing monsoon histories, this would help add a correc
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgeaf0a22" class="outline-2">
-<h2 id="orgeaf0a22">Phase 4 : Let's check the weather</h2>
-<div class="outline-text-2" id="text-orgeaf0a22">
+<div id="outline-container-org144ebc8" class="outline-2">
+<h2 id="org144ebc8">Phase 4 : Let's check the weather</h2>
+<div class="outline-text-2" id="text-org144ebc8">
 <p>
-To further refine the results would require an in-depth meteorological study of the area. Such a study would resolve a lingering questions:
+To further refine the results would require an in-depth meteorological study of the area. Such a study would resolve a slew of lingering questions:
 </p>
 
 <ul class="org-ul">
-<li>How does a season change in monsoon intensity translate to changes in local weather?</li>
+<li>How does a change in monsoon average intensity translate to changes in local weather?</li>
 <li>Maybe.. More intense rains (in mm/hour)?</li>
 <li>Maybe.. rains of the same intensity but longer in duration?</li>
+<li>How much interseasonal rain is there?</li>
+<li>How variable are monsoon isotope values?</li>
 </ul>
 
 <p>
-A better understanding in conjunction with the study of the cave's precipitation-transfer-function could yield a seasonal-average-transfer function that could show how an increase in monsoon strength maps to an increase in water reaching the cave. With that data I can begin to reconstruct the true changes in monsoon/precipitation intensity
+A better understanding of the local weather in conjunction with the study of the cave's precipitation-transfer-function could yield a seasonal-average-transfer function that could show how an increase in monsoon strength maps to an increase in water reaching the cave. With that data I can begin to reconstruct the true changes in monsoon/precipitation intensity
 </p>
 
-<ul class="org-ul">
-<li>While measuring the &nbsp;<sup>18</sup>O above the cave in different seasons and in different locations should yield good reliable values for the &nbsp;<sup>18</sup>O in both the SM and WM - these values are most likely not particularly stable from one rain storm to another. Looking at where the precipitation originates - both its origin and its path to the cave - could allow for a better understanding of the &nbsp;<sup>18</sup>O values for each monsoon and its variability.</li>
-</ul>
+<p>
+Also, looking at where the precipitation originates - both its origin and its path to the cave - could allow for a better understanding of the &nbsp;<sup>18</sup>O values for each monsoon and its variability.
+</p>
 </div>
 
-<div id="outline-container-orgc80e0c5" class="outline-3">
-<h3 id="orgc80e0c5">Expected result</h3>
-<div class="outline-text-3" id="text-orgc80e0c5">
+<div id="outline-container-org3923384" class="outline-3">
+<h3 id="org3923384">Expected result</h3>
+<div class="outline-text-3" id="text-org3923384">
 <blockquote>
 <ul class="org-ul">
-<li>Would greatly refine the previously measured effect and value and allow the historical record to more accurately reflect the on-the-ground precipitation</li>
-<li>Would potentially allow both Professor Löwemark and I to eshew having to measure &nbsp;<sup>18</sup>O values on the ground as they could be reliably estimated from weather reports.</li>
+<li>While present day weather only gives us a small window to look through - it allows us to confirm previous methods. We can see how well calculated &nbsp;<sup>18</sup>O for the SM and WM correspond to the one derived from cave &nbsp;<sup>18</sup>O measurements</li>
+<li>It we can model the source of the precipitation it may allow both Professor Löwemark and I to eshew having to measure &nbsp;<sup>18</sup>O values on the ground as they could be reliably estimated from weather reports.</li>
+<li>A seasonal inverse transfer function would allow for a more accurate estimate of the historical precipitation</li>
 </ul>
 </blockquote>
 </div>
 </div>
 
-<div id="outline-container-org6cf09c7" class="outline-3">
-<h3 id="org6cf09c7">Issues</h3>
-<div class="outline-text-3" id="text-org6cf09c7">
+<div id="outline-container-org9697f2b" class="outline-3">
+<h3 id="org9697f2b">Issues</h3>
+<div class="outline-text-3" id="text-org9697f2b">
 <blockquote>
 <ul class="org-ul">
 <li>This final phase of the project is more outside of the realm of expertise of the department and may require external collaboration.</li>
@@ -360,9 +444,27 @@ A better understanding in conjunction with the study of the cave's precipitation
 </div>
 </div>
 
-<div id="outline-container-orgeb68e93" class="outline-2">
-<h2 id="orgeb68e93">Conclusion</h2>
-<div class="outline-text-2" id="text-orgeb68e93">
+<div id="outline-container-orgd52757f" class="outline-2">
+<h2 id="orgd52757f">Conclusion</h2>
+<div class="outline-text-2" id="text-orgd52757f">
+<p>
+The project as presented is by no means exhaustive and should primarily serve as a guide to the general thrust of the project envisioned for my PhD thesis. While it may at a glance give the false impression of a chain of dependencies, where each phase depends on the results of the ones that come before it, tangential supporting evidence and alternate avenues of inquiry have been omitted for the sake of brevity. One can easily imagine other proxies like local lake sedement or speleothem geochemistry helping further disentangle the historical monsoon puzzle <sup><a id="fnr.10" class="footref" href="#fn.10">10</a></sup>. I hope it is also evident that each piece strives to answer some questions of its own - independent of any larger goal.
+</p>
+
+<p>
+Thank you once again for reviewing my application. If you have any further questions or would like for an in-person meeting/interview, please don't hesitate to get in touch
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bd6f53" class="outline-2">
+<h2 id="org0bd6f53">Addendum: COVID</h2>
+<div class="outline-text-2" id="text-org0bd6f53">
+<blockquote>
+<p>
+Naturally the nature of the project requires travelling to Thailand and doing research on-the-ground. With the current state of the world wide pandemic this presents some challenges and may raise concerns for the committee about the viability of the proposal as-presented. Fortunately at the time of submission the Corona virus situation in Thailand is stable with no new cases since mid-May. The local government is in the processes of implementing a protocol for foreigners to be able to arrive and quarantine before freely moving around the country. Furthermore, much of the meteorological and geographic work can be done just as easily from Taipei as from a hammock in Thailand. Professor Löwemark already has several speleothem samples available (with more on the way) on which initial measurements can be done and methods can be developed. So even in the most pessimistic scenario a large fraction of the work should be doable ahead of time from Taipei. While unfortunate and inconvenient, I don't forsee the pandemic being a major impediment to this project
+</p>
+</blockquote>
 </div>
 </div>
 <div id="footnotes">
@@ -370,29 +472,54 @@ A better understanding in conjunction with the study of the cave's precipitation
 <div id="text-footnotes">
 
 <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
-Thai Meteorological Department <a href="http://climate.tmd.go.th/gge/">http://climate.tmd.go.th/gge/</a> 
+Thai Meteorological Department<br>
+<a href="http://climate.tmd.go.th/gge/">http://climate.tmd.go.th/gge/</a>
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
-Timing, Duration, and Transitions of the Last Interglacial Asian Monsoon
-By Daoxian Yuan, Hai Cheng, R. Lawrence Edwards, Carolyn A. Dykoski, Megan J. Kelly, Meiliang Zhang, Jiaming Qing, Yushi Lin, Yongjin Wang, Jiangyin Wu, Jeffery A. Dorale, Zhisheng An, Yanjun Cai
-Science23 Apr 2004 : 575-578 
+<i>Timing, Duration, and Transitions of the Last Interglacial Asian Monsoon</i><br>
+By Daoxian Yuan, Hai Cheng, R. Lawrence Edwards, Carolyn A. Dykoski, Megan J. Kelly, Meiliang Zhang, Jiaming Qing, Yushi Lin, Yongjin Wang, Jiangyin Wu, Jeffery A. Dorale, Zhisheng An, Yanjun Cai<br>
+Science 23 Apr 2004 : 575-578
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
-A High-Resolution Absolute-Dated Late Pleistocene Monsoon Record from Hulu Cave, China 
-By Y. J. Wang, H. Cheng, R. L. Edwards, Z. S. An, J. Y. Wu, C.-C. Shen, J. A. Dorale
-Science14 Dec 2001 : 2345-2348
+<i>A High-Resolution Absolute-Dated Late Pleistocene Monsoon Record from Hulu Cave, China</i><br>
+By Y. J. Wang, H. Cheng, R. L. Edwards, Z. S. An, J. Y. Wu, C.-C. Shen, J. A. Dorale<br>
+Science 14 Dec 2001 : 2345-2348
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
-Clift, P., &amp; Plumb, R. (2008). The Asian Monsoon: Causes, History and Effects. Cambridge: Cambridge University Press. <a href="10.1017/CBO9780511535833">10.1017/CBO9780511535833</a>
+<i>The Asian Monsoon: Causes, History and Effects</i><br>
+Clift, P., &amp; Plumb, R. (2008)<br>
+Cambridge University Press <a href="10.1017/CBO9780511535833">10.1017/CBO9780511535833</a>
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
-The Holocene Asian Monsoon: Links to Solar Changes and North Atlantic Climate
-By Yongjin Wang, Hai Cheng, R. Lawrence Edwards, Yaoqi He, Xinggong Kong, Zhisheng An, Jiangying Wu, Megan J. Kelly, Carolyn A. Dykoski, Xiangdong Li
-Science06 May 2005 : 854-857 
+However, Yuan et al. contend that it's primarily due to changes in the fractionation due to differences in sea surface temperatures. That said, this conclusion doesn't seem to reoccur in the literature.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara"><p class="footpara">
+<i>The Holocene Asian Monsoon: Links to Solar Changes and North Atlantic Climate</i><br>
+By Yongjin Wang, Hai Cheng, R. Lawrence Edwards, Yaoqi He, Xinggong Kong, Zhisheng An, Jiangying Wu, Megan J. Kelly, Carolyn A. Dykoski, Xiangdong Li<br>
+Science 06 May 2005 : 854-857
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7">7</a></sup> <div class="footpara"><p class="footpara">
+That this may not be of significant importance: the Hulu and Dongge caves are 1200 km apart and still have almost identical &nbsp;<sup>18</sup>O curves <sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8">8</a></sup> <div class="footpara"><p class="footpara">
+While this is sufficient as a first order approximation - these values may still change if, for instance, the direction of the monsoon changes over time. A survey of historic meteorological data should shine a light on how stable this value is
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9">9</a></sup> <div class="footpara"><p class="footpara">
+<i>Rainfall variations in central Indo-Pacific over the past 2,700 y</i><br>
+Liangcheng Tan, Chuan-Chou Shen, Ludvig Löwemark, Sakonvan Chawchai, R. Lawrence Edwards, Yanjun Cai, Sebastian F. M. Breitenbach, Hai Cheng, Yu-Chen Chou, Helmut Duerrast, Judson W. Partin, Wenju Cai, Akkaneewut Chabangborn, Yongli Gao, Ola Kwiecien, Chung-Che Wu, Zhengguo Shi, Huang-Hsiung Hsu, Barbara Wohlfarth<br>
+Proceedings of the National Academy of Sciences Aug 2019, 116 (35) 17201-17206; DOI: 10.1073/pnas.1903167116
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.10" class="footnum" href="#fnr.10">10</a></sup> <div class="footpara"><p class="footpara">
+The most fruitful external information would be a way to reconstruct the historical precipitations totals. This give you a value for <b>P<sub>SM</sub>(t)+P<sub>WM</sub>(t)</b> which combined with the precipitation ration determined from cave isotopes ( ie. <b>P<sub>SM</sub>(t)/P<sub>WM</sub>(t)</b> )  would immediately give you historical precipitation values from each monsoon. Whether such a proxy exists (especially at the same resolutions as the speleothems) is unclear - so it's been omitted from the discussion.
 </p></div></div>
 
 
