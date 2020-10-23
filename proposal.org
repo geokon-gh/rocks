@@ -14,7 +14,7 @@ Below is my proposal for a research concept that would take several years and wo
 
 The variability of the annual Asian monsoon's intensity has been a major driver behind the change in climate in the region. These changes over the centuries have precipitated shifts in biomes, have triggered the historic collapse of states and the displacement of peoples. Understanding the dynamics and evolution of monsoons is central to anticipating future trends for this region's climate. With an ever more rapidly changing climate the need to understand these systems becomes more acute. The answer to these questions lies in the climate record.
 
-In this proposal I present a general framework for improving our understanding of the Asian monsoon's past trends based on previous research done in the area. It presents a general research trajectory, but many details and either omitted or unresolved. Tangential possibilities, like looking at other proxies, collaborations or research sites are also left implied and are omitted for brevity. The proposal is divided into semi-independent pieces which each seek to answer one piece of the puzzle that lies in the climate record. The aim of this approach is to generate fruitful intermediary results while building towards a larger more complete picture of the historical monsoon in South East Asia.
+In this proposal I present a general framework for improving our understanding of the Asian monsoon's past trends based on previous research done in the area. It presents a general research trajectory, but many details are either omitted or unresolved. Tangential possibilities, like looking at other proxies, collaborations or research sites are also left implied and are omitted for brevity. The proposal is divided into semi-independent pieces which each seek to answer one piece of the puzzle that lies in the climate record. The aim of this approach is to generate fruitful intermediary results while building towards a larger more complete picture of the historical monsoon in South East Asia.
 
 Through collaboration with Professor Löwemark I've focused the study area primarily to the caves on Southern Thailand. This both compliments Professor Löwemark's ongoing work as well as leverages his existing contacts and experience in the area. However, the choice is not simply of convenience but one that presents several crucial practical advantages over alternatives and that are rather unique to the Malay Peninsula. 
 
@@ -24,9 +24,9 @@ Through collaboration with Professor Löwemark I've focused the study area prima
 
 - The first advantage is purely geographic; because Southern Thailand lies between the Indian ocean and the South China Sea it lies in the path of both the Summer monsoon (*SM*) and Winter monsoon (*WM*) with high precipitation coming from both systems. 
 
-- The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable [fn:Yuan2004], highly accurate [fn:Yuan2004] and there are fewer confounding external factors such as found in other climate records [fn:Wang2001]. They can be dated accurately through \nbsp{}^{230}Th and the climate record can be investigated through high resolution \nbsp{}^{18}O measurements
+- The second advantage is that the region, famous for its beautiful karst towers, boasts a staggering amount of cave systems giving me a wide selection of candidate research locations. As we'll see, the selection of a proper cave is crucial for generating useful data. The speleothem within provide a long stable geological records that is closely tied to precipitation. The derived signals have been shown to be highly repeatable [fn:Yuan2004], highly accurate [fn:Yuan2004] and there are fewer confounding external factors such as found in other climate records [fn:Wang2001]. They can be dated accurately through \shy{}^{230}Th and the climate record can be investigated through high resolution \shy{}^{18}O measurements
 
-- I further suspect that karst towers, relative to other cave systems, will have much more easily characterizable dynamic when it comes to absorbing precipitation because of the limited amount of surrounding earth (and therefore due to a smaller water retention capacity will exhibit less histeresis).
+- I further suspect that karst towers, relative to other cave systems, will have much a more easily characterizable dynamic when it comes to absorbing precipitation because of the limited amount of surrounding earth (and therefore due to a smaller water retention capacity will exhibit less histeresis).
 
 * Phase 1 : One Cave Replication
 
@@ -34,24 +34,24 @@ The first phase of the project would be a replication of the existing work done 
 
 [[./one-cave-wide.svg]]
 
-Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \nbsp{}^{18}O relative to the smaller Hadley cell driven Winter monsoon [fn:TheAsianMonsoon](p.30). By measuring the changes in \nbsp{}^{18}O in the cave that has precipitated out as carbonate/limestone on the stalagmites they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
+Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \shy{}^{18}O relative to the smaller Hadley cell driven Winter monsoon [fn:TheAsianMonsoon](p.30). By measuring the changes in \shy{}^{18}O in the cave that has precipitated out as carbonate/limestone on the stalagmites they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
 
-We can characterize the concentration of \nbsp{}^{18}O_{cave} with:
+We can characterize the concentration of \shy{}^{18}O_{cave} with:
 #+BEGIN_QUOTE
 c_{cave}(t) = [ P_{SM}(t)\times{}f_{SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{WM}\times{}c_{WM} ] / [ P_{SM}(t)\times{}f_{SM} + P_{WM}(t)\times{}f_{WM} ]
-- c_{cave}(t) :: concentrations of \nbsp{}^{18}O in the cave in the past
-- c_{SM|WM} :: concentration of \nbsp{}^{18}O in the SM|WM
+- c_{cave}(t) :: concentrations of \shy{}^{18}O in the cave in the past
+- c_{SM|WM} :: concentration of \shy{}^{18}O in the SM|WM
 - P_{SM|WM}(t) :: Precipitation during the SM|WM
 - f_{SM|WM} :: the fraction of the precipitation that goes into the cave from the SM|WM
 #+END_QUOTE
 
-Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie. *f_{SM}\approx{}0.8* and *f_{WM}\approx{}0.2*) Wang et al. present the likely culprit for decreases in the in \nbsp{}^{18}O in the cave as an intensification of the SM. [fn:ExtraO18Driver] However they stop short of actually explicit attempting to quantifying monsoon intensities. Shifts in the \nbsp{}^{18}O concentrations in the cave are simply interpreted as increases or decreases in the SM strength.
+Because the Hulu cave (near Nanjing) and the Dongge cave (in Guizhou) have no major bodies of water situation North of them, the WM is mostly consists of dry Siberian air [fn:Wang2001], while the SM  brings in moist air and precipitation. Since they determines that at present the Summer monsoon accounts for ~80% of the annual precipitation at both cave sites (ie. *f_{SM}\approx{}0.8* and *f_{WM}\approx{}0.2*) Wang et al. present the likely culprit for decreases in the in \shy{}^{18}O in the cave as an intensification of the SM. [fn:ExtraO18Driver] However they stop short of actually explicit attempting to quantifying monsoon intensities. Shifts in the \shy{}^{18}O concentrations in the cave are simply interpreted as increases or decreases in the SM strength.
 
-However this analysis was sufficient to demonstrate an incredbly strong connections between the climate record in Greenland ice cores [fn:Wang2001] and the SM. They then go on to show in subsequent work that there is a strong connection between orbitaly induced changes in insolation and the amount of \nbsp{}^{18}O in the cave [fn:Yuan2004] [fn:Wang2005]
+However this superficial correlation was sufficient to demonstrate an incredbly strong connections between the climate record in Greenland ice cores [fn:Wang2001] and the SM. They went on to show in subsequent work that there is a strong connection between orbitaly induced changes in insolation and the amount of \shy{}^{18}O in the cave [fn:Yuan2004] [fn:Wang2005]
 
 It's important to note here that all their studies demonstrated a surprisingly high degree of replication between speleothems in the same cave [fn:Wang2001] - so different time bands would easily connect up to create very long time sequences with no gaps. Furthermore, the level of detail is so high that they no only could detect climate anomalies like The Younger Dryas, Bolling Allerod and Heinrich Events, but they seemed to even demonstrate that insolation increased 300 years before the beginning of the last Interglacial [fn:Yuan2004]. This level of detail is very hard to achieve through other climate proxies at the time scales involved.
 
-The first phase would be simply to replicate this study in a karst tower cave to confirm that this method would provide similar results to the ones found in China and that insolation correlates with changes in \nbsp{}^{18}O.
+The first phase would be simply to replicate this study in a karst tower cave to confirm that this method would provide similar results to the ones found in China and that insolation correlates with changes in \shy{}^{18}O.
 
 ** Expected results
 #+BEGIN_QUOTE
@@ -62,18 +62,18 @@ The first phase would be simply to replicate this study in a karst tower cave to
 
 ** Potential Issues
 #+BEGIN_QUOTE
-1. The difference in SM and WM \nbsp{}^{18}O in Thailand could be much smaller than in China
+1. The difference in SM and WM \shy{}^{18}O in Thailand could be much smaller than in China
 2. Interseasonal rains would present noise in the isotope variability - so the signal would not be as strong as in a SM dominated area
 #+END_QUOTE
 
 ** Unresolved questions
 #+BEGIN_QUOTE
-1. \nbsp{}^{18}O is a purely one dimensional proxy - and cave systems don't easily provide others.
-2. The \nbsp{}^{18}O concentrations of the SM and WM (*c_{SM|WM}*) are not known. Modern values can be calculated but historic values are not directly available
-3. An increase in \nbsp{}^{18}O can both correspond to an increase in SM precipitation or a decrease in WM precipitation (this holds true for the original studies in China as well)
+1. \shy{}^{18}O is a purely one dimensional proxy - and cave systems don't easily provide others.
+2. The \shy{}^{18}O concentrations of the SM and WM (*c_{SM|WM}*) are not known. Modern values can be calculated but historic values are not directly available
+3. An increase in \shy{}^{18}O can both correspond to an increase in SM precipitation or a decrease in WM precipitation (this holds true for the original studies in China as well)
 #+END_QUOTE
 * Phase 2 : A Two-Cave Problem
-To resolve the \nbsp{}^{18}O concentrations of the SM and WM, I propose extending the previous method to two caves.
+To resolve the \shy{}^{18}O concentrations of the SM and WM, I propose extending the previous method to two caves.
 
 [[./two-cave-wide.svg]]
 
@@ -83,7 +83,7 @@ The /second/ cave would be selected to predominantly get WM precipitation. The c
 
 And here the Malay peninsula has the exact conditions we are looking for. It's a rather skinny peninsula with strong WM rains on the northern-eastern shore coming from the Gulf of Thailand and the South China Sea,  and strong SM rains on the southern-western shore coming from the Bay of Bengal and the Indian Ocean. A low mountain range in the middle providing the necessary rain shadow effect for both sides.
 
-I expect that measuring precipitation from two monsoons simultaneously will lead to an increase in noise due to interseasonal/non-monsoon rains. However, \nbsp{}^{18}O values have already been shown to be incredibly reliable so I expect the noise to be numerically tolerable and the redundancy of two caves would help verify the reliability.
+I expect that measuring precipitation from two monsoons simultaneously will lead to an increase in noise due to interseasonal/non-monsoon rains. However, \shy{}^{18}O values have already been shown to be incredibly reliable so I expect the noise to be numerically tolerable and the redundancy of two caves would help verify the reliability.
 
 As before we can write out each cave's isotope concentration. 
 #+BEGIN_QUOTE
@@ -91,8 +91,8 @@ As before we can write out each cave's isotope concentration.
 c_{1}(t) = [ P_{SM}(t)\times{}f_{1,SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{1,WM}\times{}c_{WM} ] / [ P_{SM}\times{}f_{1,SM} + P_{WM}(t)\times{}f_{1,WM} ] \\
 /North Cave:/\\
 c_{1}(t) = [ P_{SM}(t)\times{}f_{2,SM}\times{}c_{SM} + P_{WM}(t)\times{}f_{2,WM}\times{}c_{WM} ] / [ P_{SM}(t)\times{}f_{2,SM} + P_{WM}(t)\times{}f_{2,WM} ]
-- c_{1|2}(t) :: concentration of \nbsp{}^{18}O in the caves 1|2 over time
-- c_{SM|WM} :: concentration of \nbsp{}^{18}O in the SM|WM (constant, or very slowly changing)
+- c_{1|2}(t) :: concentration of \shy{}^{18}O in the caves 1|2 over time
+- c_{SM|WM} :: concentration of \shy{}^{18}O in the SM|WM (constant, or very slowly changing)
 - P_{SM|WM}(t) :: Past precipitation during the SM|WM
 - f_{1|2,SM|WM} :: the fraction of the precipitation that goes into the cave 1|2 from the SM|WM
 #+END_QUOTE
@@ -116,9 +116,9 @@ With both left terms identical we can set these equal to each other and rearrang
 #+END_QUOTE
 The /left hand side/ is a constant based on measured values. We assume it's a function of the local geography and is time invariant on the time scales in question. [fn:ExtraFractionation]
 
-The /right hand side/ is a series of our isotope measurements (c_1(t) c_2(t)) and a two unknown values c_{WM} and c_{SM} that represent the isotope rations in each monsoon. Now this becomes a simple optimization problem of selecting an estimate for c_{WM} and c_{SM} such that the resulting right side values for different measured isotope values c_{1|2}(t_{n}) are as close to the left side fraction as possible. This is in effect done with a linear regression (taking the logarithm of the above equation linearizes the problem) 
+The /right hand side/ is a series of our isotope measurements (c_1(t) c_2(t)) and two unknown values c_{WM} and c_{SM} that represent the isotope rations in each monsoon. Now this becomes a simple optimization problem of selecting an estimate for c_{WM} and c_{SM} such that the resulting right side values for different measured isotope values c_{1|2}(t_{n}) are as close to the left side fraction as possible. This is in effect done with a linear regression (taking the logarithm of the above equation linearizes the problem) 
 
-While c_{WM} and c_{SM} are constant in the short to medium term they nonetheless they will evolve slowly over time and therefore the estimates need to be periodically updated. In practice this is probably best accomplished with a sliding window where estimate are continuously updated across the historical record.
+While c_{WM} and c_{SM} are constant in the short to medium term they nonetheless will evolve slowly over time and therefore the estimates need to be periodically updated. In practice this is probably best accomplished with a sliding window where estimate are continuously updated across the historical record.
 
 ** Expected results
 #+BEGIN_QUOTE
@@ -133,7 +133,7 @@ While c_{WM} and c_{SM} are constant in the short to medium term they nonetheles
 
 ** Unresolved questions
 #+BEGIN_QUOTE
-1. Again, an increase in \nbsp{}^{18}O could both correspond to an increase in SM precipitation or a decrease in WM precipitation. This remains unresolved and a two cave system, counterintuitively, doesn't give you any direct insight into this. If c_{WM} and c_{SM} are correlated with P_{SM} and P_{WM} then maybe we could say more - but this would need to be confirmed by some external method/proxy.
+1. Again, an increase in \shy{}^{18}O could both correspond to an increase in SM precipitation or a decrease in WM precipitation. This remains unresolved and a two cave system, counterintuitively, doesn't give you any direct insight into this. If c_{WM} and c_{SM} are correlated with P_{SM} and P_{WM} then maybe we could say more - but this would need to be confirmed by some external method/proxy.
 #+END_QUOTE
 
 * Phase 3 : Trickle Down Caveanomics 
@@ -187,12 +187,12 @@ To further refine the results would require an in-depth meteorological study of 
 
 A better understanding of the local weather in conjunction with the study of the cave's precipitation-transfer-function could yield a seasonal-average-transfer function that could show how an increase in monsoon strength maps to an increase in water reaching the cave. With that data I can begin to reconstruct the true changes in monsoon/precipitation intensity.
 
-Also, looking at where the precipitation originates - both its origin and its path to the cave - could allow for a better understanding of the \nbsp{}^{18}O values for each monsoon and its variability.
+Also, looking at where the precipitation originates - both its origin and its path to the cave - could allow for a better understanding of the \shy{}^{18}O values for each monsoon and its variability.
 
 ** Expected result
 #+BEGIN_QUOTE
-- While present day weather only gives us a small window to look through - it allows us to confirm previous methods. We can see how well calculated \nbsp{}^{18}O for the SM and WM correspond to the one derived from cave \nbsp{}^{18}O measurements
-- It we can model the source of the precipitation it may allow both Professor Löwemark and I to eshew having to measure \nbsp{}^{18}O values on the ground as they could be reliably estimated from weather reports.
+- While present day weather only gives us a small window to look through - it allows us to confirm previous methods. We can see how well calculated \shy{}^{18}O for the SM and WM correspond to the one derived from cave \shy{}^{18}O measurements
+- It we can model the source of the precipitation it may allow both Professor Löwemark and I to eshew having to measure \shy{}^{18}O values on the ground as they could be reliably estimated from weather reports.
 - A seasonal inverse transfer function would allow for a more accurate estimate of the historical precipitation
 #+END_QUOTE
 
@@ -237,7 +237,7 @@ Cambridge University Press doi:10.1017/CBO9780511535833
 
 [fn:ExtraO18Driver] However, Yuan et al. contend that it's primarily due to changes in the fractionation due to differences in sea surface temperatures. That said, this conclusion doesn't seem to reoccur in the literature.
 
-[fn:ExtraProximity] That this may not be of significant importance: the Hulu and Dongge caves are 1200 km apart and still have almost identical \nbsp{}^{18}O curves [fn:Yuan2004]
+[fn:ExtraProximity] That this may not be of significant importance: the Hulu and Dongge caves are 1200 km apart and still have almost identical \shy{}^{18}O curves [fn:Yuan2004]
 
 [fn:ExtraFractionation] While this is sufficient as a first order approximation - these values may still change if, for instance, the direction of the monsoon changes over time. A survey of historic meteorological data should shine a light on how stable this value is
 
