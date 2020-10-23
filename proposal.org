@@ -72,8 +72,8 @@ The first phase would be simply to replicate this study in a karst tower cave to
 2. The \nbsp{}^{18}O concentrations of the SM and WM (*c_{SM|WM}*) are not known. Modern values can be calculated but historic values are not directly available
 3. An increase in \nbsp{}^{18}O can both correspond to an increase in SM precipitation or a decrease in WM precipitation (this holds true for the original studies in China as well)
 #+END_QUOTE
-* Phase 2 : A two-cave problem
-To resolve the \nbsp{}^{18}O concentrations of the SM and WM, I propose extending the previous method to two caves
+* Phase 2 : A Two-Cave Problem
+To resolve the \nbsp{}^{18}O concentrations of the SM and WM, I propose extending the previous method to two caves.
 
 [[./two-cave-wide.svg]]
 
@@ -112,7 +112,7 @@ P_{SM}(t)/P_{WM}(t) = [f_{2,WM}/f_{2,SM}]\times{}[c_{WM} - c_{2}(t)] /  [c_{2}(t
 With both left terms identical we can set these equal to each other and rearrange
 #+BEGIN_QUOTE
 [f_{1,WM}/f_{1,SM}]\times{}[c_{WM} - c_{1}(t)] /  [c_{1}(t) - c_{SM}] = [f_{2,WM}/f_{2,SM}]\times{}[c_{WM} - c_{2}(t)] /  [c_{2}(t) - c_{SM}] \\
-[f_{1,WM}f_{2,SM}]/[f_{1,SM}f_{2,WM}] = ([c_{WM} - c_{2}(t)]\times{}[c_{1}(t) - c_{SM}]) /  ([c_{2}(t) - c_{SM}]\times{} [c_{WM} - c_{1}(t)] )
+[f_{1,WM}f_{2,SM}]/[f_{1,SM}f_{2,WM}] = ([c_{WM} - c_{2}(t)]\times{}[c_{1}(t) - c_{SM}]) /  ([c_{2}(t) - c_{SM}]\times{}[c_{WM} - c_{1}(t)] )
 #+END_QUOTE
 The /left hand side/ is a constant based on measured values. We assume it's a function of the local geography and is time invariant on the time scales in question. [fn:ExtraFractionation]
 
@@ -133,7 +133,7 @@ While c_{WM} and c_{SM} are constant in the short to medium term they nonetheles
 
 ** Unresolved questions
 #+BEGIN_QUOTE
-1. Again, an increase in \nbsp{}^{18}O could both correspond to an increase in SM precipitation or a decrease in WM precipitation. This remains unresolved and a two cave system, counterintuitively, doesn't give you any direct insight into this. If c_{WM} and c_{SM} are correlated with P_{SM} and P_{WM} then maybe we could say more - but this would need to be confirmed by some external method/proxy
+1. Again, an increase in \nbsp{}^{18}O could both correspond to an increase in SM precipitation or a decrease in WM precipitation. This remains unresolved and a two cave system, counterintuitively, doesn't give you any direct insight into this. If c_{WM} and c_{SM} are correlated with P_{SM} and P_{WM} then maybe we could say more - but this would need to be confirmed by some external method/proxy.
 #+END_QUOTE
 
 * Phase 3 : Trickle Down Caveanomics 
@@ -146,7 +146,7 @@ Professor Löwemark is currently, building on previous work[fn:Tan2019], investi
 
 [[./trickle-wide.svg]]
 
-These mechanisms (and potentially others to be discovered) would present a complex mechanism for the precipitation to actually turn into drip water in the cave system. If these could be properly characterized as a transfer function
+These mechanisms (and potentially others to be discovered) would present a complex mechanism for the precipitation to actually turn into drip water in the cave system. If these could be properly characterized as a transfer function.
 #+BEGIN_QUOTE
 f(precipitation) \rightarrow{} drip_{cave}
 #+END_QUOTE
@@ -175,7 +175,7 @@ In the context of reconstructing monsoon histories, this would help add a correc
 #+BEGIN_QUOTE
 1. The effects are on the weather-scale - and they will need to be somehow extrapolated to the climate scale
 #+END_QUOTE
-* Phase 4 : Let's check the weather
+* Phase 4 : Let's Check the Weather
 
 To further refine the results would require an in-depth meteorological study of the area. Such a study would resolve a slew of lingering questions:
 
@@ -185,7 +185,7 @@ To further refine the results would require an in-depth meteorological study of 
 - How much interseasonal rain is there?
 - How variable are monsoon isotope values?
 
-A better understanding of the local weather in conjunction with the study of the cave's precipitation-transfer-function could yield a seasonal-average-transfer function that could show how an increase in monsoon strength maps to an increase in water reaching the cave. With that data I can begin to reconstruct the true changes in monsoon/precipitation intensity
+A better understanding of the local weather in conjunction with the study of the cave's precipitation-transfer-function could yield a seasonal-average-transfer function that could show how an increase in monsoon strength maps to an increase in water reaching the cave. With that data I can begin to reconstruct the true changes in monsoon/precipitation intensity.
 
 Also, looking at where the precipitation originates - both its origin and its path to the cave - could allow for a better understanding of the \nbsp{}^{18}O values for each monsoon and its variability.
 
@@ -205,11 +205,11 @@ Also, looking at where the precipitation originates - both its origin and its pa
 * Conclusion
 The project as presented is by no means exhaustive and should primarily serve as a guide to the general thrust of the project envisioned for my PhD thesis. While it may at a glance give the false impression of a chain of dependencies, where each phase depends on the results of the ones that come before it, tangential supporting evidence and alternate avenues of inquiry have been omitted for the sake of brevity. One can easily imagine other proxies like local lake sediment or speleothem geochemistry helping further disentangle the historical monsoon puzzle [fn:ExtraLayers]. I hope it is also evident that each piece strives to answer some questions of its own - independent of any larger goal.
 
-Thank you once again for reviewing my application. If you have any further questions or would like for an in-person meeting/interview, please don't hesitate to get in touch
+Thank you once again for reviewing my application. If you have any further questions or would like for an in-person meeting/interview, please don't hesitate to get in touch.
 
 * Addendum: COVID
 #+BEGIN_QUOTE
-Naturally the nature of the project requires traveling to Thailand and doing research on-the-ground. With the current state of the world wide pandemic this presents some challenges and may raise concerns for the committee about the viability of the proposal as-presented. Fortunately at the time of submission the Corona virus situation in Thailand is stable with no new cases since mid-May. The local government is in the processes of implementing a protocol for foreigners to be able to arrive and quarantine before freely moving around the country. Furthermore, much of the meteorological and geographic work can be done just as easily from Taipei as from a hammock in Thailand. Professor Löwemark already has several speleothem samples available (with more on the way) on which initial measurements can be done and methods can be developed. So even in the most pessimistic scenario a large fraction of the work should be doable ahead of time from Taipei. While unfortunate and inconvenient, I don't foresee the pandemic being a major impediment to this project
+Naturally the nature of the project requires traveling to Thailand and doing research on-the-ground. With the current state of the world wide pandemic this presents some challenges and may raise concerns for the committee about the viability of the proposal as-presented. Fortunately, at the time of submission the Corona virus situation in Thailand is stable with no new cases since mid-May. The local government is in the processes of implementing a protocol for foreigners to be able to arrive and quarantine before freely moving around the country. Furthermore, much of the meteorological and geographic work can be done just as easily from Taipei as from a hammock in Thailand. Professor Löwemark already has several speleothem samples available (with more on the way) on which initial measurements can be done and methods can be developed. So even in the most pessimistic scenario a large fraction of the work should be doable ahead of time from Taipei. While unfortunate and inconvenient, I don't foresee the pandemic being a major impediment to this project.
 #+END_QUOTE
 
 [fn:ThaiWeather]  Thai Meteorological Department\\
