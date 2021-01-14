@@ -51,14 +51,10 @@ A very rough overlay of the two does provide a tantalizing hint that "problemati
 It's important to also note that the glacial periods (and corresponding sea level changes) do not closely correspond to insolation changes - so this gives us hope of being able to separate out the effect of the two forcing mechanism and to be able to better model the monsoon system during these low sea level periods 
 
 
+** References
 
-** Ref
+1. Clemens, S. C., Prell, W. L., and Sun, Y. (2010), Orbital‐scale timing and mechanisms driving Late Pleistocene Indo‐Asian summer monsoons: Reinterpreting cave speleothem δ18O, Paleoceanography, 25, PA4207, doi:10.1029/2010PA001926. 
 
-Clemens, S. C., Prell, W. L., and Sun, Y. (2010), Orbital‐scale timing and mechanisms driving Late Pleistocene Indo‐Asian summer monsoons: Reinterpreting cave speleothem δ18O, Paleoceanography, 25, PA4207, doi:10.1029/2010PA001926. 
+2. L. Löwemark et al (2009) "New evidence for a glacioeustatic influence on deep water circulation, bottom water ventilation and primary productivity in the South China Sea" Dynamics of Atmospheres and Oceans, Volume 47, Issues 1–3,
 
-
- "Orbital‐scale timing and mechanisms driving Late Pleistocene Indo‐Asian summer monsoons: Reinterpreting cave speleothem δ18O" by Clemens et al. (2018)
-
-L. Löwemark et al (2009) "New evidence for a glacioeustatic influence on deep water circulation, bottom water ventilation and primary productivity in the South China Sea" Dynamics of Atmospheres and Oceans, Volume 47, Issues 1–3,
-
-"Timing, Duration, and Transitions of the Last Interglacial Asian Monsoon" by Daoxian Yuan and Hai Cheng Science 23 Apr 2004 : 575-578 
+3. Daoxian Yuan, Hai Cheng "Timing, Duration, and Transitions of the Last Interglacial Asian Monsoon" Science 23 Apr 2004 : 575-578 
