@@ -1,0 +1,585 @@
+#+DESCRIPTION:
+#+OPTIONS: toc:nil 
+
+#+INCLUDE: "../web/config.org"
+#+HTML_HEAD_EXTRA: <meta name="robots" content="noindex">
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../web/slidy.css" /> 
+#+HTML_HEAD_EXTRA: <script src="../web/slidy.js" charset="utf-8" type="text/javascript"></script> 
+
+
+# START
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2 / 4; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+@@html:<h1>Fishing for a paleoclimate key in karst plumbing</h1>@@
+- Speaker: George Kontsevich / 康笑愚
+- Date: March 30th, 2021
+#+END_title
+#+END_slide
+
+# 
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Preface
+#+END_title
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1/3;
+#+BEGIN_mainimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block; max-height: 80vh; max-width: 90%; height: auto; width: auto;
+[[./figures/Labeled_speleothems.jpg]]
+#+END_mainimage
+
+#+END_slide
+
+# MONSOON AND ITCZ
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Preface
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 80%;
+[[./figures/simple-cave.svg]]
+#+END_leftimage
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
+#+BEGIN_incremental
+1. Rain water percolates into the soil 
+3. Soil *CO_{2}* diffuses and forms carbonic acid
+4. *H_{2}O + CO_{2} \Leftrightarrow{} H_{2}CO_{3} \Leftrightarrow{} CO_{3}^{2-} + H^{+}*
+5. Since *HO_{2}* >>> *CO_{2}* \there4{} *\delta{}\shy{}^{18}O_{water}* \tilde{} *\delta{}\shy{}^{18}O_{air}*
+6. *CaCO_3 + 2H^{+ } \Rightarrow{} Ca^{2+} + H_{2}O + CO_{2}*
+7. Liquid enters a void, *CO_{2}* degasses
+8. *CaCO_3* precipitates onto the surface (easier than in solution - *nucleation potential* so no mud)
+\\
+\\
+... Then used to interpret paleoclimate
+#+END_incremental
+#+END_slide
+
+# ISOTOPE OFFSETS
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Do we have a problem?
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 80%;
+[[./figures/simple-cave.svg]]
+#+END_leftimage
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
+#+BEGIN_incremental
+#+BEGIN_rightimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;  max-height: 95vh; max-width: 95%; height: auto; width: auto;
+[[./figures/o18-offsets.svg]]
+#+END_rightimage
+#+END_incremental
+
+#+END_slide
+
+# MOERMAN
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 75fr 10fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Other research..
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1/3; object-fit: contain;
+#+BEGIN_mainimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;max-height: 80vh; max-width: 90%; height: 65vh;
+[[./figures/moerman14.svg]]
+#+END_mainimage
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 1/3; object-fit: contain;
+#+BEGIN_QUOTE
+Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adkins, J. F., Lejau, S., Malang, J., Clark, B., and Tuen, A. A. (2014), Transformation of ENSO‐related rainwater to dripwater δ18O variability by vadose water mixing, Geophys. Res. Lett., 41, 7907– 7915, doi:10.1002/2014GL061696.
+#+END_QUOTE
+
+#+END_slide
+
+# MOERMAN
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 75fr 10fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Other research..
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1/3; object-fit: contain;
+#+BEGIN_mainimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;max-height: 80vh; max-width: 90%; height: 65vh;
+[[./figures/moerman14-together.svg]]
+#+END_mainimage
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 1/3; object-fit: contain;
+#+BEGIN_QUOTE
+Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adkins, J. F., Lejau, S., Malang, J., Clark, B., and Tuen, A. A. (2014), Transformation of ENSO‐related rainwater to dripwater δ18O variability by vadose water mixing, Geophys. Res. Lett., 41, 7907– 7915, doi:10.1002/2014GL061696.
+#+END_QUOTE
+
+#+END_slide
+
+# KARST INTRO
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Karst
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;
+[[./figures/karst-towers-krabi.jpg]]
+#+END_leftimage
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
+#+BEGIN_rightimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;
+[[./figures/krab-cave-view.jpg]]
+#+END_rightimage
+
+#+END_slide
+# dolomite + calcite etc.
+
+# KARST ZONES: Soil
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 42fr 42fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Karst Zones: Soil
+#+END_title
+
+#+BEGIN_COMMENT
+Speleothems capture oxygen from the atomosphere:
+- Respiration fixes atmospheric *O* in *CO_{2}* molecules
+- Plants respire about 40% in their root systems
+- *CO_{2}* has trouble to diffuse out of the soil due to friction and long pathways
+- Partial pressure depends on temperature, water
+#+END_COMMENT
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-base.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+*Soil*
+- Source of *CO_{2}*
+- Open System
+- *CO_{2}* seeps out but slowly
+- 40% Porosity
+- *P_{CO_{2}}* is variable ( \tilde{} \Delta{}T \tilde{} water )
+- Organic matter can travel down
+- Retains some water..
+#+END_incremental
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 40vh; max-width: 40%;  position: absolute;
+[[./figures/root-in-soil.jpg]]
+#+END_leftimage
+#+END_slide
+
+# KARST ZONES
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Karst Zones: Epikarst
+#+END_title
+
+#+BEGIN_COMMENT
+Speleothems capture oxygen from the atomosphere:
+- Respiration fixes atmospheric *O* in *CO_{2}* molecules
+- Plants respire about 40% in their root systems
+- *CO_{2}* has trouble to diffuse out of the soil due to friction and long pathways
+- Partial pressure depends on temperature, water
+#+END_COMMENT
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-base.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+*Epikarst*
+- Closed system .. /probably/
+- *CO_{2}* supply is fixed
+- 10-30% Porosity
+- 3-10 meters in depth
+- 90% dissolution happens in 1-2 meters
+- then runs out of *CO_{2}* (below saturation)
+#+END_incremental
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_rightimage
+#+BEGIN_incremental
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%;  position: absolute; height: auto; width: auto;
+[[./figures/krabi-epikarst.jpg]]
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%; position: absolute; height: auto; width: auto;
+[[./figures/krabi-epikarst2.jpg]]
+#+END_incremental
+#+END_rightimage
+
+#+END_slide
+
+
+# KARST ZONES
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Karst Zones: Transit Zone
+#+END_title
+
+#+BEGIN_COMMENT
+Speleothems capture oxygen from the atomosphere:
+- Respiration fixes atmospheric *O* in *CO_{2}* molecules
+- Plants respire about 40% in their root systems
+- *CO_{2}* has trouble to diffuse out of the soil due to friction and long pathways
+- Partial pressure depends on temperature, water
+#+END_COMMENT
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-base.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+*Transit Zone*
+- less than 2% porosity
+- flow is mainly through fissures
+- matrix vs. preferential flow
+#+END_incremental
+
+
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_rightimage
+#+BEGIN_incremental
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%;  position: absolute; height: auto; width: auto;
+[[./figures/krabi-karst-matrix.jpg]]
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%; position: absolute; height: auto; width: auto;
+[[./figures/krabi-preferential-flow.jpg]]
+#+END_incremental
+#+END_rightimage
+
+#+END_slide
+
+
+
+# RAIN
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Rain flowthrough
+#+END_title
+
+#+BEGIN_incremental
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-base.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-light-rain.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+[[./figures/karst-heavy-rain.svg]]
+#+END_leftimage
+#+END_incremental
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+
+Karst acts as a "leaky basket" and contains a suspended aquifer
+
+#+END_incremental
+
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_incremental
+#+BEGIN_model
+#+ATTR_HTML: :style max-height: 50vh; max-width: 40%; position: absolute;
+[[./figures/model-light-rain.svg]]
+#+END_model
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_model
+#+ATTR_HTML: :style max-height: 50vh; max-width: 40%; position: absolute;
+[[./figures/model-heavy-rain.svg]]
+#+END_model
+#+END_incremental
+#+END_slide
+
+# SOIL SPONGE PROBLEM
+
+# SECONDARY AQUIFERS
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 32fr 52fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Secondary Aquifers
+#+END_title
+
+#+BEGIN_incremental
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-light-rain.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-conduit-light.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+[[./figures/karst-conduit-heavy.svg]]
+#+END_leftimage
+#+END_incremental
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+
+Non uniform dissolution creates multiple mini-aquifers due to:
+- Surface geomorphology
+- non-calcium-carbonate layers
+- trace minerals
+- differences in pressure and temperature
+- kinetic breakthrough
+This creates a strong bias towards heavy rain events
+
+
+#+END_incremental
+
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_incremental
+#+BEGIN_model
+#+ATTR_HTML: :style max-height: 50vh; max-width: 40%; position: absolute;
+[[./figures/model-light-rain.svg]]
+#+END_model
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2;
+#+BEGIN_model
+#+ATTR_HTML: :style max-height: 50vh; max-width: 40%; position: absolute;
+[[./figures/model-with-conduit.svg]]
+#+END_model
+#+END_incremental
+
+#+END_slide
+# pressure (high pressure -> more dissolving) and temperature (but luckely this isn't a factor too much) - high temp less dissolved calcite. Often in weird counterbalance
+
+# EXTRA CAVE PROBLEM
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+Geochemical challenges
+#+END_title
+
+#+BEGIN_incremental
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+Intermediary voids
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-base.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+[[./figures/karst-extra-cave.svg]]
+#+END_leftimage
+
+#+END_incremental
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
+#+BEGIN_incremental
+#+BEGIN_rightimage
+Decoupling flow signatures - for a sanity check
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+[[./figures/karst-conduit-heavy.svg]]
+#+END_rightimage
+#+END_incremental
+#+END_slide
+
+
+
+# MEASURE: C13 AND RESIDENCE TIME (MORE INFO IN NOTES) - RESERVOIR EFFECT
+
+# MEASURE: SpC (SPECIFIC CONDUCTIVITY)
+
+# MEASURE: SPECIFIC HARDNESS
+
+# ADVANTAGES OF KARST TOWER.. CONSTANT TEMP - NOT TOO MANY EXTRA CHANNELS
+
+# #+ATTR_HTML: :style position: absolute; left: 0; top: 0; width:30%
+# #+BEGIN_EXPORT html
+# <div style="position: absolute; left: 0; top: 1em; width:30%; height: auto">
+#  <div style="position: absolute; left: 30%; top: 1em; width:30%; height: 100%">
+#   <svg width="100%" height="100%"  style="position: absolute; left: 0; top: 1em;">
+#    <circle cx="30%" cy="50%" r="10%" fill="blue" stroke="black" />
+#   </svg>
+#  </div>
+# </div>
+# #+END_EXPORT
+
+
+# Prof Lowemark then asked the question, well what to do about the intermediary system between rain and stalagmite.
+
+# Original plan.. Measure the water above the cave - then measure the water in the cave
+
+# Borneo
+# They did this already. Measuring above the cave and in the cave :(
+# So now we want to investigate further and find something deeper
+
+# however reminder:
+# GOALS:
+# - Assess a stalagmite - if it's any good for paleoclimate reconstruction
+# - Build a model and crude inverse function to build an estimate of the original rain water. 
+# First, We want to answer the question (crudely) given rain measured above, what is the dripping inside
+# Second, given a record of dripping inside, what can we say about the rain?
+
+
+# 4 - Karst Hydrology: Keeping it simple
+# What is karst
+# How does the water get into the cave
+# Different zones and effects etc.
+# When it rains more, you get a pressure head and it drips more (flow through can be much longer)
+# First obvious issue.. soil acts as a sponge factor... and can dry out. Pressure head is not immediate (maybe show in Borneo data?)
+
+
+# 5 - Complications
+# Cave above the drip site
+# Multiple channels - deep cracks can form - secondary flows
+
+# 6 - Simple pressure model
+
+# 7 - Fingerprinting each channel flow
+
+# 8 - Other things to measure...
+
+#+BEGIN_slide
+Pictures to steal..
+
+tapered cracks p133
+
+cracks reaching down p135
+
+different flow regimes p160
+
+full cave system p284
+
+tower karst p370
+#+END_slide

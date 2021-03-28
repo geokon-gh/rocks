@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&lrm;</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="George Kontsevich">
+<link rel="stylesheet" type="text/css" href="../web/worg.css" />
+<link rel="shortcut icon" href="../web/panda.svg" type="image/x-icon">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="../web/slidy.css" />
+<script src="../web/slidy.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2 / 4; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+<h1>Fishing for a paleoclimate key in karst plumbing</h1>
+</p>
+<ul class="org-ul">
+<li>Speaker: George Kontsevich / 康笑愚</li>
+<li>Date: March 30th, 2021</li>
+</ul>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Preface
+</p>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 1/3;" class="mainimage">
+
+<div class="figure">
+<p><img src="./figures/Labeled_speleothems.jpg" alt="Labeled_speleothems.jpg" style="margin-left: auto; margin-right: auto; display: block; max-height: 80vh; max-width: 90%; height: auto; width: auto;">
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Preface
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/simple-cave.svg" class="org-svg" style="max-height: 80vh; max-width: 80%;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2;" class="incremental">
+<ol class="org-ol">
+<li>Rain water percolates into the soil</li>
+<li>Soil <b>CO<sub>2</sub></b> diffuses and forms carbonic acid</li>
+<li><b>H<sub>2</sub>O + CO<sub>2</sub> &hArr; H<sub>2</sub>CO<sub>3</sub> &hArr; CO<sub>3</sub><sup>2-</sup> + H<sup>+</sup></b></li>
+<li>Since <b>HO<sub>2</sub></b> &gt;&gt;&gt; <b>CO<sub>2</sub></b> &there4; <b>&delta;&shy;<sup>18</sup>O<sub>water</sub></b> ~ <b>&delta;&shy;<sup>18</sup>O<sub>air</sub></b></li>
+<li><b>CaCO<sub>3</sub> + 2H<sup>+ </sup> &rArr; Ca<sup>2+</sup> + H<sub>2</sub>O + CO<sub>2</sub></b></li>
+<li>Liquid enters a void, <b>CO<sub>2</sub></b> degasses</li>
+<li><b>CaCO<sub>3</sub></b> precipitates onto the surface (easier than in solution - <b>nucleation potential</b> so no mud)</li>
+</ol>
+<p>
+<br>
+<br>
+&#x2026; Then used to interpret paleoclimate
+</p>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Do we have a problem?
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/simple-cave.svg" class="org-svg" style="max-height: 80vh; max-width: 80%;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2;" class="incremental">
+<div class="rightimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/o18-offsets.svg" class="org-svg" style="margin-left: auto; margin-right: auto; display: block;  max-height: 95vh; max-width: 95%; height: auto; width: auto;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 75fr 10fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Other research..
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1/3; object-fit: contain;" class="mainimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/moerman14.svg" class="org-svg" style="margin-left: auto; margin-right: auto; display: block;max-height: 80vh; max-width: 90%; height: 65vh;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<blockquote style="grid-row: 4; grid-column: 1/3; object-fit: contain;">
+<p>
+Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adkins, J. F., Lejau, S., Malang, J., Clark, B., and Tuen, A. A. (2014), Transformation of ENSO‐related rainwater to dripwater δ18O variability by vadose water mixing, Geophys. Res. Lett., 41, 7907– 7915, <a href="10.1002/2014GL061696">10.1002/2014GL061696</a>.
+</p>
+</blockquote>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 75fr 10fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Other research..
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1/3; object-fit: contain;" class="mainimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/moerman14-together.svg" class="org-svg" style="margin-left: auto; margin-right: auto; display: block;max-height: 80vh; max-width: 90%; height: 65vh;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<blockquote style="grid-row: 4; grid-column: 1/3; object-fit: contain;">
+<p>
+Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adkins, J. F., Lejau, S., Malang, J., Clark, B., and Tuen, A. A. (2014), Transformation of ENSO‐related rainwater to dripwater δ18O variability by vadose water mixing, Geophys. Res. Lett., 41, 7907– 7915, <a href="10.1002/2014GL061696">10.1002/2014GL061696</a>.
+</p>
+</blockquote>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Karst
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><img src="./figures/karst-towers-krabi.jpg" alt="karst-towers-krabi.jpg" style="margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;">
+</p>
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2;" class="rightimage">
+
+<div class="figure">
+<p><img src="./figures/krab-cave-view.jpg" alt="krab-cave-view.jpg" style="margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;">
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 42fr 42fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Karst Zones: Soil
+</p>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-base.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 2; position: absolute;" class="incremental">
+<p>
+<b>Soil</b>
+</p>
+<ul class="org-ul">
+<li>Source of <b>CO<sub>2</sub></b></li>
+<li>Open System</li>
+<li><b>CO<sub>2</sub></b> seeps out but slowly</li>
+<li>40% Porosity</li>
+<li><b>P<sub>CO<sub>2</sub></sub></b> is variable ( ~ &Delta;T ~ water )</li>
+<li>Organic matter can travel down</li>
+<li>Retains some water..</li>
+</ul>
+
+</div>
+
+<div style="grid-row: 4; grid-column: 2;" class="leftimage">
+
+<div class="figure">
+<p><img src="./figures/root-in-soil.jpg" alt="root-in-soil.jpg" style="max-height: 40vh; max-width: 40%;  position: absolute;">
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Karst Zones: Epikarst
+</p>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-base.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 2; position: absolute;" class="incremental">
+<p>
+<b>Epikarst</b>
+</p>
+<ul class="org-ul">
+<li>Closed system .. <i>probably</i></li>
+<li><b>CO<sub>2</sub></b> supply is fixed</li>
+<li>10-30% Porosity</li>
+<li>3-10 meters in depth</li>
+<li>90% dissolution happens in 1-2 meters</li>
+<li>then runs out of <b>CO<sub>2</sub></b> (below saturation)</li>
+</ul>
+
+</div>
+
+<div style="grid-row: 4; grid-column: 2;" class="rightimage">
+<div class="incremental">
+
+<div class="figure">
+<p><img src="./figures/krabi-epikarst.jpg" alt="krabi-epikarst.jpg" style="max-height: 60vh; max-width: 40%;  position: absolute; height: auto; width: auto;">
+</p>
+</div>
+
+<div class="figure">
+<p><img src="./figures/krabi-epikarst2.jpg" alt="krabi-epikarst2.jpg" style="max-height: 60vh; max-width: 40%; position: absolute; height: auto; width: auto;">
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Karst Zones: Transit Zone
+</p>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-base.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 2; position: absolute;" class="incremental">
+<p>
+<b>Transit Zone</b>
+</p>
+<ul class="org-ul">
+<li>less than 2% porosity</li>
+<li>flow is mainly through fissures</li>
+<li>matrix vs. preferential flow</li>
+</ul>
+
+</div>
+
+
+
+<div style="grid-row: 4; grid-column: 2;" class="rightimage">
+<div class="incremental">
+
+<div class="figure">
+<p><img src="./figures/krabi-karst-matrix.jpg" alt="krabi-karst-matrix.jpg" style="max-height: 60vh; max-width: 40%;  position: absolute; height: auto; width: auto;">
+</p>
+</div>
+
+<div class="figure">
+<p><img src="./figures/krabi-preferential-flow.jpg" alt="krabi-preferential-flow.jpg" style="max-height: 60vh; max-width: 40%; position: absolute; height: auto; width: auto;">
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Rain flowthrough
+</p>
+
+</div>
+
+<div class="incremental">
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-base.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-light-rain.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-heavy-rain.svg" class="org-svg" style="max-height: 80vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2; position: absolute;" class="incremental">
+<p>
+
+</p>
+
+<p>
+Karst acts as a "leaky basket" and contains a suspended aquifer
+</p>
+
+</div>
+
+
+<div style="grid-row: 4; grid-column: 2;" class="incremental">
+<div class="model">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/model-light-rain.svg" class="org-svg" style="max-height: 50vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+<div style="grid-row: 4; grid-column: 2;" class="model">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/model-heavy-rain.svg" class="org-svg" style="max-height: 50vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 32fr 52fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Secondary Aquifers
+</p>
+
+</div>
+
+<div class="incremental">
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-light-rain.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-conduit-light.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3 / 5; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-conduit-heavy.svg" class="org-svg" style="max-height: 80vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2; position: absolute;" class="incremental">
+<p>
+
+</p>
+
+<p>
+Non uniform dissolution creates multiple mini-aquifers due to:
+</p>
+<ul class="org-ul">
+<li>Surface geomorphology</li>
+<li>non-calcium-carbonate layers</li>
+<li>trace minerals</li>
+<li>differences in pressure and temperature</li>
+<li>kinetic breakthrough</li>
+</ul>
+<p>
+This creates a strong bias towards heavy rain events
+</p>
+
+</div>
+
+<div style="grid-row: 4; grid-column: 2;" class="incremental">
+<div class="model">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/model-light-rain.svg" class="org-svg" style="max-height: 50vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+<div style="grid-row: 4; grid-column: 2;" class="model">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/model-with-conduit.svg" class="org-svg" style="max-height: 50vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;" class="slide">
+<div style="grid-row: 1; grid-column: 1 / 3;" class="header">
+
+<div class="figure">
+<p><img src="./figures/Wang_Ximeng.jpg" alt="Wang_Ximeng.jpg" style="height: 10vh; width: auto;">
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 2; grid-column: 1 / 3; font-size: 2vw;" class="title">
+<p>
+Geochemical challenges
+</p>
+
+</div>
+
+<div class="incremental">
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+<p>
+Intermediary voids
+</p>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-base.svg" class="org-svg" style="max-height: 80vh; max-width: 40%;  position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+<div style="grid-row: 3; grid-column: 1;" class="leftimage">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-extra-cave.svg" class="org-svg" style="max-height: 80vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div style="grid-row: 3; grid-column: 2;" class="incremental">
+<div class="rightimage">
+<p>
+Decoupling flow signatures - for a sanity check
+</p>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./figures/karst-conduit-heavy.svg" class="org-svg" style="max-height: 80vh; max-width: 40%; position: absolute;">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="slide">
+<p>
+Pictures to steal..
+</p>
+
+<p>
+tapered cracks p133
+</p>
+
+<p>
+cracks reaching down p135
+</p>
+
+<p>
+different flow regimes p160
+</p>
+
+<p>
+full cave system p284
+</p>
+
+<p>
+tower karst p370
+</p>
+
+</div>
+</div>
+</body>
+</html>
