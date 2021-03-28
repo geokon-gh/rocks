@@ -1,7 +1,7 @@
 #+DESCRIPTION:
 #+OPTIONS: toc:nil 
 
-#+INCLUDE: "../web/config.org"
+#+INCLUDE: "../web/config-nocss.org"
 #+HTML_HEAD_EXTRA: <meta name="robots" content="noindex">
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../web/slidy.css" /> 
 #+HTML_HEAD_EXTRA: <script src="../web/slidy.js" charset="utf-8" type="text/javascript"></script> 
