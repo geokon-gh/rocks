@@ -1,5 +1,5 @@
 #+TITLE: The Asian Monsoons
-#+DESCRIPTION: Basics in Stats using Octave/MATLAB
+#+DESCRIPTION:
 
 #+INCLUDE: "../web/config.org"
 #+HTML_HEAD_EXTRA: <meta name="robots" content="noindex">
@@ -18,7 +18,7 @@ In this proposal I present a general framework for improving our understanding o
 
 Through collaboration with Professor Löwemark I've focused the study area primarily to the caves on Southern Thailand. This both compliments Professor Löwemark's ongoing work as well as leverages his existing contacts and experience in the area. However, the choice is not simply of convenience but one that presents several crucial practical advantages over alternatives and that are rather unique to the Malay Peninsula. 
 
-[[./precipitation.png]]
+[[./figures/precipitation.png]]
 
 /Source: Royal irrigation Department Thailand/ [fn:ThaiWeather]
 
@@ -32,7 +32,7 @@ Through collaboration with Professor Löwemark I've focused the study area prima
 
 The first phase of the project would be a replication of the existing work done in the Hulu and Dongge caves in China by Professor Cheng Hai and his team.
 
-[[./one-cave-wide.svg]]
+[[./figures/one-cave-wide.svg]]
 
 Their critical insight was that the Summer Monsoon, the larger of the two - driven by the heating of the Tibetan plateau, due to intense fractionation/precipitation over the Indian Ocean has a much /lower/ concentrations of \shy{}^{18}O relative to the smaller Hadley cell driven Winter monsoon [fn:TheAsianMonsoon](p.30). By measuring the changes in \shy{}^{18}O in the cave that has precipitated out as carbonate/limestone on the stalagmites they managed to observe the changes in the ratio of precipitation of Summer to Winter monsoon.
 
@@ -75,7 +75,7 @@ The first phase would be simply to replicate this study in a karst tower cave to
 * Phase 2 : A Two-Cave Problem
 To resolve the \shy{}^{18}O concentrations of the SM and WM, I propose extending the previous method to two caves.
 
-[[./two-cave-wide.svg]]
+[[./figures/two-cave-wide.svg]]
 
 The /first/ cave would have similar characteristics to the one in China - with predominantly SM precipitation. 
 
@@ -144,7 +144,7 @@ Professor Löwemark is currently, building on previous work[fn:Tan2019], investi
 1. A heavy rain above a cave system quickly saturates a certain above-ground layer on the karst tower and past a certain point rain starts to pool and pour past the cave system as surface water.
 2. Light rains will quickly evaporate back into the atmosphere before having the chance to absorb into the soil
 
-[[./trickle-wide.svg]]
+[[./figures/trickle-wide.svg]]
 
 These mechanisms (and potentially others to be discovered) would present a complex mechanism for the precipitation to actually turn into drip water in the cave system. If these could be properly characterized as a transfer function.
 #+BEGIN_QUOTE
