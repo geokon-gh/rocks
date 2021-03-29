@@ -35,7 +35,7 @@
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Preface
+*Preface*
 #+END_title
 
 
@@ -58,7 +58,7 @@ Preface
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Preface
+*Preface*
 #+END_title
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 1;
@@ -70,13 +70,12 @@ Preface
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 2;
 #+BEGIN_incremental
-1. Rain water percolates into the soil 
-3. Soil *CO_{2}* diffuses and forms carbonic acid
-4. *H_{2}O + CO_{2} \Leftrightarrow{} H_{2}CO_{3} \Leftrightarrow{} CO_{3}^{2-} + H^{+}*
-5. Since *HO_{2}* >>> *CO_{2}* \there4{} *\delta{}\shy{}^{18}O_{water}* \tilde{} *\delta{}\shy{}^{18}O_{air}*
-6. *CaCO_3 + 2H^{+ } \Rightarrow{} Ca^{2+} + H_{2}O + CO_{2}*
-7. Liquid enters a void, *CO_{2}* degasses
-8. *CaCO_3* precipitates onto the surface (easier than in solution - *nucleation potential* so no mud)
+- Rain water percolates into the soil 
+- Soil *CO_{2}* diffuses and forms carbonic acid
+- *H_{2}O + CO_{2} \Leftrightarrow{} H_{2}CO_{3} \Leftrightarrow{} CO_{3}^{2-} + H^{+}*
+- *CaCO_3 + 2H^{+ } \Rightarrow{} Ca^{2+} + H_{2}O + CO_{2}*
+- Liquid enters a void, *CO_{2}* degasses
+- *CaCO_3* precipitates onto the surface
 \\
 \\
 ... Then used to interpret paleoclimate
@@ -94,7 +93,7 @@ Preface
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Do we have a problem?
+*Do we have a problem?*
 #+END_title
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 1;
@@ -124,8 +123,8 @@ Do we have a problem?
 #+END_header
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
-#+BEGIN_title
-Other research..
+ #+BEGIN_title
+*Other research..*
 #+END_title
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 1/3; object-fit: contain;
@@ -152,7 +151,7 @@ Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adki
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Other research..
+*Other research..*
 #+END_title
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 1/3; object-fit: contain;
@@ -169,7 +168,7 @@ Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adki
 #+END_slide
 
 # KARST INTRO
-#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 42fr 42fr; overflow: hidden;
 #+BEGIN_slide
 #+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
 #+BEGIN_header
@@ -179,17 +178,26 @@ Moerman, J. W., Cobb, K. M., Partin, J. W., Meckler, A. N., Carolin, S. A., Adki
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Karst
+*Karst*
 #+END_title
 
-#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
 #+BEGIN_leftimage
-#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;
+#+ATTR_HTML: :style max-height: 30vh; max-width: 40%;  position: absolute;
 [[./figures/karst-towers-krabi.jpg]]
 #+END_leftimage
 
+#+ATTR_HTML: :style grid-row: 4; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+- Evaporites/Gypsum, Limestone, Dolomite, Marble ..
+- Dolomite: *MgCa(CO_{3})_{2}* - 
+- Calcite/Aragonite: *CaCO_{3}*
+- Calcite: many forms, incorporates trace elements
+- Aragonite: less stable, more compact, turns into calcite easily
 
-#+ATTR_HTML: :style grid-row: 3; grid-column: 2;
+#+END_incremental
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
 #+BEGIN_rightimage
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block;  max-height: 80vh; max-width: 90%; height: auto; width: auto;
 [[./figures/krab-cave-view.jpg]]
@@ -209,7 +217,7 @@ Karst
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Karst Zones: Soil
+*Karst Zones: /Soil/*
 #+END_title
 
 #+BEGIN_COMMENT
@@ -256,7 +264,7 @@ Speleothems capture oxygen from the atomosphere:
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Karst Zones: Epikarst
+*Karst Zones: /Epikarst/*
 #+END_title
 
 #+BEGIN_COMMENT
@@ -308,7 +316,7 @@ Speleothems capture oxygen from the atomosphere:
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Karst Zones: Transit Zone
+*Karst Zones: /Transit Zone/*
 #+END_title
 
 #+BEGIN_COMMENT
@@ -360,7 +368,7 @@ Speleothems capture oxygen from the atomosphere:
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Rain flowthrough
+*Rain flowthrough*
 #+END_title
 
 #+BEGIN_incremental
@@ -419,7 +427,7 @@ Karst acts as a "leaky basket" and contains a suspended aquifer
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Secondary Aquifers
+*Secondary Aquifers*
 #+END_title
 
 #+BEGIN_incremental
@@ -450,7 +458,6 @@ Non uniform dissolution creates multiple mini-aquifers due to:
 - Surface geomorphology
 - non-calcium-carbonate layers
 - trace minerals
-- differences in pressure and temperature
 - kinetic breakthrough
 This creates a strong bias towards heavy rain events
 
@@ -473,7 +480,66 @@ This creates a strong bias towards heavy rain events
 #+END_slide
 # pressure (high pressure -> more dissolving) and temperature (but luckely this isn't a factor too much) - high temp less dissolved calcite. Often in weird counterbalance
 
-# EXTRA CAVE PROBLEM
+# THE ROCK
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+*An annoying problem... or opportunity?*
+#+END_title
+
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1/3;
+#+BEGIN_mainimage
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto; display: block; max-height: 80vh; max-width: 90%; height: auto; width: auto;
+[[./figures/the-rock.gif]]
+#+END_mainimage
+
+#+END_slide
+
+# SECONDARY AQUIFERS
+#+ATTR_HTML: :style display: grid; grid-template-columns: 2fr 1.5fr 1.5fr; grid-template-rows: 10fr 6fr 42fr 42fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+*Possibility of extra dimensions*
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 60%; margin-left: auto; margin-right: auto; display: block;
+[[./figures/karst-2-speleo.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 ; grid-column: 2;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 60%; margin-left: auto; margin-right: auto; display: block;
+[[./figures/model-with-conduit.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3 ; grid-column: 3;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 60%; margin-left: auto; margin-right: auto; display: block;
+[[./figures/model-heavy-rain.svg]]
+#+END_leftimage
+
+
+#+END_slide
+
+
+# GEOCHEMICAL CHALLENGES
 #+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 5fr 85fr; overflow: hidden;
 #+BEGIN_slide
 #+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
@@ -484,34 +550,65 @@ This creates a strong bias towards heavy rain events
 
 #+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
 #+BEGIN_title
-Geochemical challenges
+*Geochemical challenges*
 #+END_title
 
 #+BEGIN_incremental
 #+ATTR_HTML: :style grid-row: 3; grid-column: 1;
 #+BEGIN_leftimage
 Intermediary voids
-#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
-[[./figures/karst-base.svg]]
-#+END_leftimage
-
-#+ATTR_HTML: :style grid-row: 3; grid-column: 1;
-#+BEGIN_leftimage
-#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+- Detectable by measuring *Mg/Ca* and *Sr/Ca*
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%;  position: absolute;
 [[./figures/karst-extra-cave.svg]]
 #+END_leftimage
-
 #+END_incremental
 
 
 #+ATTR_HTML: :style grid-row: 3; grid-column: 2;
 #+BEGIN_incremental
 #+BEGIN_rightimage
-Decoupling flow signatures - for a sanity check
-#+ATTR_HTML: :style max-height: 80vh; max-width: 40%; position: absolute;
+Varying concentrations:
+- Should be detectable by measuring Hardness/Conductivity
+#+ATTR_HTML: :style max-height: 60vh; max-width: 40%; position: absolute;
 [[./figures/karst-conduit-heavy.svg]]
 #+END_rightimage
 #+END_incremental
+#+END_slide
+
+
+# KARST ZONES
+#+ATTR_HTML: :style display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 10fr 6fr 22fr 62fr; overflow: hidden;
+#+BEGIN_slide
+#+ATTR_HTML:  :style grid-row: 1; grid-column: 1 / 3;
+#+BEGIN_header
+#+ATTR_HTML:  :style height: 10vh; width: auto;
+[[./figures/Wang_Ximeng.jpg]]
+#+END_header
+
+#+ATTR_HTML: :style grid-row: 2; grid-column: 1 / 3; font-size: 2vw;
+#+BEGIN_title
+*Can we fingerprint aquifers?*
+#+END_title
+
+#+ATTR_HTML: :style grid-row: 3 / 5; grid-column: 1;
+#+BEGIN_leftimage
+#+ATTR_HTML: :style max-height: 80vh; max-width: 40%;  position: absolute;
+[[./figures/karst-conduit-heavy.svg]]
+#+END_leftimage
+
+#+ATTR_HTML: :style grid-row: 3; grid-column: 2; position: absolute;
+#+BEGIN_incremental
+*Short term..*
+- Ca^{2+} concentrations
+- Trace mineral concentrations
+- chemical tracers
+*Longer term.. \shy{}^{13}C  (???)* 
+- has been used to detect changes in vegitation
+- different residence times -> "reservoir effect"
+- relatively stable climate
+- maybe .. compared to \shy{}^{14}C to see if they covary or not
+#+END_incremental
+
 #+END_slide
 
 
@@ -569,17 +666,3 @@ Decoupling flow signatures - for a sanity check
 # 7 - Fingerprinting each channel flow
 
 # 8 - Other things to measure...
-
-#+BEGIN_slide
-Pictures to steal..
-
-tapered cracks p133
-
-cracks reaching down p135
-
-different flow regimes p160
-
-full cave system p284
-
-tower karst p370
-#+END_slide
