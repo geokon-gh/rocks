@@ -1,0 +1,316 @@
+#+TITLE: Karst Tower hydrology
+#+DESCRIPTION:
+#+OPTIONS: toc:nil 
+
+#+INCLUDE: "../web/config.org"
+#+HTML_HEAD_EXTRA: <meta name="robots" content="noindex">
+
+* Water's journey through the rock
+
+** Rain
+What we try to measure. *\shy{}^{18}O* is based on weather "events". Primarily the monsoon..
+** Soil (Vadose)
+- soil is about 40% porous. Has bound water
+*** Dissolved CO_2
+- CO_2 accumulates b/c diffusion is retarded by friction of torturous path ways p50 [fn:Ford2007] (so it's a semi-open system..)
+- 17-31% volume available for gas storage [fn:Drake1984]
+- plants respire approximately 40% of the CO_2 they extract in their roots. roots = CO_2 pumps
+- at 50cm down .. dry climate 500ppm  | wet climate 26000-40000 ppm [fn:Yuan2001]
+- Final CO_2 partial pressure is determined by water (20%) and temperature (50%) [fn:Drake1975]
+- Organic matter is also brought down with the water and decomposes within the karst (which complicates resulting concentrations)
+- Water get's saturated with CO_{2} .. probably.. most of the time
+** Epikarst (Vadose)
+The immediate face of the limestone where the majority of the weathering happens. Existing fissures preferrencially continue to dissolve - so weathering is not uniform
+- 70% of dissolution happens here (hence fissures narrow as you go further down)
+- 10-30% porosity. Can hold the bulk of the water in a suspended aquifer
+- 3-10 meters in depth
+- high storage capacity
+- spacially variable with some zones erroded much deeper than others - creating shafts
+- Closed system - so the CO_{2} is limited to what came in with the water. This leads to a max 25mg/L of calcium carbonate (open system is 55mg/L)
+
+*NOTE* Not always true.. if you have strong dry seasons and chalky porous limestone then you can have *case hardening* and so it's actually less permiable near the surface.
+** Transit zone  (Vadose)
+- primary/secondary/tertiary porosity.. 
+- unweathered rock - so much less permiable - this differential makes the epikarst develop a suspended aquifer of sorts
+- less than 2% porosity (matrix flow)
+- mainly flow through fissures
+- changes in pressure caused by more rain causes a near immediate *pulse through* (also called /piston effect/)
+- The actualy *flow through* of the water can take much longer [fn:Klimchouk1989]
+- There can be a lot of lateral flow through the cave
+
+*Note* Sometimes entirely missing.. like in Shilin Yunnan. Just epikarst and water table [fn:Williams2008]
+** Phreatic zone
+The water table .. below the cave.
+
+*** TODO Has been modeled before
+[fn:Clemens1999] Simulation of the development of karst squifers: role of the epikarst
+International Journal of Earth Sciences 88(1) 157-62
+
+[fn:Kiraly2002] Karstification and groundwater flow
+Evolition of Karst: from Prekarst to Cessation
+Postojna;Ljubljana: Institu za raziskovanje krasa
+
+[fn:Kovacs2003] Geometry and hydraulic parameters of karst aquifers: a hydrodynamic modeling approach
+Faculte des Sciences
+Universite de Neuchatel Thesis 131 pp.
+at www.unine.ch/biblio/
+
+*** TODO Flow switching
+[fn:Smart1987] Water movement and storage in the unsaturated zone of a maturely jarstified carbonate aquifer, Mendip Hills, England
+Proceedings of the Conference on Environmental Problems in Karst Terrances and their Solutions.
+National Water Well Assiciation, Dublin, Ohio 59-87
+[fn:Sondag2003] Monitoring present day climatic conditions in tropical caves using an Evnonmental Data Acquisition System (EDAS)
+Journal of Hydrology 273(1-4) 103-18
+[fn:Baker2003] Non-linearities in drip water hydrology: an example from Stump Cross Caverns, Yorkshire
+Journal of Hydrology 277 151-63
+
+* Geochemistry
+** Negative Logarithms
+like pH
+#+BEGIN_QUOTE
+Ca^{2+} = 0.0025 mol L^{-1} \Rightarrow log_{10} \Rightarrow 10^{-2.6} \Rightarrow pCa^{2+} = 2.6
+#+END_QUOTE
+p41 [fn:Ford2007]
+** Chemical Equilibria
+The following from ... p42 [fn:Ford2007]\\
+\\
+a bit of calcite will dissolve in water
+#+BEGIN_QUOTE
+CaCO_{3} \Leftrightarrow Ca^{2+} + CO_{3}^{2-}
+#+END_QUOTE
+This can be *hydrated* by *H^{+}* (proton)
+#+BEGIN_QUOTE
+Ca^{2+} + CO_{3}^{2-} + H^{+ } \Leftrightarrow Ca^{2+} + HCO_{3}^{-}
+#+END_QUOTE
+But this equation is unbalanced in terms of charge.. and further CO_{3}^{2-} may dissociate .. leading to *acid dissolution*. This will keep going till it reaches a dynamic equilibrium and the reverse reaction balances the forward one
+
+- Law of Mass Action :: aA + bB \Leftrightarrow cC + dD
+- Equilibrium Constant *K* :: K = [C]^{c}[D}^{d} / [A]^{a}[B]^{b}
+
+ex: Water:
+#+BEGIN_QUOTE
+
+H_{2}O \Leftrightarrow H^{+ } + OH^{-} \\
+K_{w} = [H^{+}][OH^{-}] / [H_{2}O] \\
+we know that ... \\
+K_{w} = 10^{-14} (at 25\ordm{}C) \\
+K_{w} = 10^{-14.9} at 0\ordm{}C) \\
+#+END_QUOTE
+Since *K_{w}* is tiny the top term must be very small. Water doesn't spontaneously dissociate much into ions. The energy to dissociate is the *Gibbs free energy of reaction*
+#+BEGIN_QUOTE
+\Delta{}G\ordm{} = -2.303 \sdot{} RT \sdot{} log_{10}K\\
+R = 8.314 J mol^{-1} K^{-1}
+T = temperature
+#+END_QUOTE
+*R* is the gas constant.. (who knows where that comes from)
+** Dissolution
+*** Equilibria
+**** Open System
+Like in a open pond on top of limestone p52 [fn:Ford2007]
+- infinite atomospheric CO_2 available
+- can ultimately dissolve 55mg/L @ 25\ordm{}C vs.. 75mg/L @ 0\ordm{}C
+- .. at P_{CO_2} ~ 0.036%
+**** Closed System
+Once water saturated with CO_2 goes down a fissure it can't get any more CO_2 so the amount of calcite it can dissolve is limited to 25mg/L @ 25\ordm{}C (ie. 40% of the surface)
+*** Kinetics/Chemistry
+- DBL :: Diffusion boundary layer. Layer above solid through which chemical diffusion happens
+- 90% saturation within the first 1-2m of water going down a fissure through dissolution of Ca^{2+} through the *DBL*
+- Kinetic Breakthrough :: past a certain threshold a fissure will suddenly start dissolving very fast p73 [fn:Ford2007] *Unclear why this happens.. just what the models show*
+- Dissolution happens at the surface as layers of ions are zippered off (a staircase "diagonal" edge dissolves much faster)
+- H^{+ } ions take off CO_{3}^{2-} molecules and then bare Ca^{2+} fall off (??)
+- Impossible to get a universal dissolution rate! (even if we somehow could fine the surface area)
+*** Factors
+**** Pressure
+ - The higher the more dissolves...
+ - seems to be a significant factor at large depths ... maybe not relevant in a karst tower
+ - Has weird interaction with temperature
+ #+BEGIN_QUOTE
+ ex:\\
+ Karst hotsprings -> CO_2 from below .. as water rises it's pressure drops and it becomes supersaturated w/ calcite *or* it cools so much it's understaturated\\
+ see:\\
+ Yoshimura et al
+ Deep source CO_2 in natural waters and its role in extensive tufa deposition in the Huanglong Ravines, Sichuan, China
+ #+END_QUOTE
+**** Temperature 
+ - strongly affects the saturation point
+ - 55mg/L @ 25\ordm{}C vs.. 75mg/L @ 0\ordm{}C
+ - Water often cools as it passes underground, making it able to dissolve rock further
+ - Krabi should have pretty constant annual temperatures
+**** Trace minerals
+- can strongly affect dissolution p57-58 [fn:Ford2007]
+- They interfere with the lattice structure of the crystal and create dislocations to is enhances unraveling of the structure
+**** Acid Rain
+ p58-59 [fn:Ford2007]
+**** Common Ion
+ If you have something lik gypsum that provides another source of Ca^{2+} then this will retard dissolution
+**** Sea water
+ p60 [fn:Ford2007]
+**** Biological Activity
+ ...
+
+*** H_{2}S
+Also dissolves everything.. 
+- Ramiform Hypogene System
+- Mississippi Valley Type (MVT)
+- H_{2}S is commonly from the oxidation of pyrite or from volcanic regions. But it can also come from compressed or deformed sediments (~1.5-4 km down) or biological activity
+- O_2 is the limiting factor. So you can get dissolution when O_2 is suddenly available - like a ventilated cavern, or a flood that pushes in O_2 rich water
+- Leads to the precipitation of sulfide ore bodies
+- Can happen in conjunction with the CO_2 dissolution of limstone (it can precipitate while the other is dissolving)
+** Precipitation
+*** In bare water
+- Forms *crystallite* micro crystals thant then grow/riper by accretion
+- only really happens in marl lakes
+*** On surfaces
+- Surfaces greatly decrease the required energy for precipitation to occur (*nulceation potential*)
+- Starts at SI = 0.3 (Saturation index)
+- SI > 1.0 things go very quickly
+- If it's too fast then you get crystals and globbing and *adhesive growth*
+*** Bacteria
+Can either enhance or retard crystallization by taking or releasing CO_2
+*** Other elements
+- Will readily pick up foreign ions and molecules
+- Humic/Fulvic acids -> give most of the differences in color
+- Some elements are "poisons" that inhibit precipitation (ex: microorganisms, phosphates, trace metals)
+- Mg^{2+} is a major "poison". However it doesn't "fit" in aragonite so aragonite can still form. Hence why aragonite precipitates in seawater environments
+#+BEGIN_QUOTE
+*Note*: Aragonite can still precipitate in fresh water conditions if for instance gypsum precipitates and depletes the Ca^{2+} first
+#+END_QUOTE
+#+BEGIN_QUOTE
+ex:\\
+HuangLong\\
+Lu et al 2000 \\
+Controlling processes in a CaCO_3 precipitation stream in Huanglong natural Scenic District, Sichuan, China \\
+Journal of Hydrology
+#+END_QUOTE
+
+* Challenges in modeling
+
+** Advantages in using karst towers
+
+
+* Things to measure
+
+** Tracers
+- You can measure the *flow through* rate this way
+- salts as tracers :: MgCl2 / CaCl2 / NaCl p7 [fn:Clark2015]
+When dissolved give the solution different densities. Will they percolate through differently? What are tracers others have used?
+*** TODO Read up on past work
+Lots of references in [fn:Williams2008] ...
+
+[fn:Bottrell1992] Tracer study of flow and storage in the unsaturated zone of a karstic limestone aquifer
+Trace Hydrology, Proceedings of the Sixth International Symposium on Water Tracing, Karlsruhe Germany pp 207-211
+
+** Detecting gaps above the cave (ventilated air pockets)
+- Ca^{2+} :: the normal calcium that precipitates out when the CO2 outgasses. The precipitation can be prevented with a small amount of nitric acid when the water is saturated (or super saturated)
+- Mg^{2+} :: Seems to dissolve immediately? Not as sensative to flow rate as *Ca*. Higher Flow rates give lower ion concentration but a higher *Mg/Ca* ration.
+------
+- You can have ventilated air gaps "above" your sampling cave - which will cause a premature deposition of a ration of your *Ca*. This should produce a discernable offset in your *Mg/Ca vs. drip-rate* plots [fn:Tooth2003].  So if there is premature deposition then this ratio will be skewed [fn:Fairchild2000]
+
+*** TODO Check Ca/Mg dissolutions precipitation stuff.. 
+[fn:Fairchild2000] Controls on trace element (Sr-Mg) compositions of carbonate cave waters: implications for speleothem climate records
+Chemical Geology 166,255-269
+[fn:Fairchild2001] Annual to sub-annual resolution of multiple trace-element trends in speleothems. 
+Journal of Geological Society 158, 831-841
+
+** Organic Activity 
+- Dissolved Oxygen (DO) :: is an indicator of organic activity (or lack of activity. Maybe a proxy for residence time? p23  [fn:Clark2015]
+
+** Carbon isotope in speleothem
+- the dissolved organic carbon (DIC)  from C3 plants should have dC13 of around -14% to -18%
+- host limestone dC13 +1%
+- In the unsaturated zone the C is from the DIC. limestone dissolution is limited by dissolved CO2
+- if you have fast flow then all the C13 is from the soil. If you have slow flow then it mixes with the limestone
+- complicated by the fact that you can have more fractionation.. at the degassing location or re-evaporation near the suface.
+- can see shifts btwn C3 and C4 plants.
+
+see [fn:McDermott2004] for more details and references..
+
+** Other residence time proxies
+- nobel gases / O2 / N2/ Ar :: related to ground wter recharge condition p24 [fn:Clark2015]
+- 87Sr/87Sr :: Something to do with weathering [fn:Clark2015]
+- if there is pyrite then you get sulfate... 
+*** TODO Determine if there is pyrite in the karst tower
+
+** Specific Conductivity *SpC
+p63 [fn:Ford2007]
+- Can be directly translated to a value of mg/L CaCO_2
+- Inpurities interfere at high concentrations
+** pH
+- best done directly in the cave...
+- Can be done afterwards in a lab - but sounds tricky.. p64 [fn:Ford2007]
+** Total Hardness (Ca^{2+} + Mg^{2+})
+involves doing chemistry..  p64 [fn:Ford2007]
+** CO_2
+p66 [fn:Ford2007]
+A drop of water formed at the tip of a soda straw stalactite lost CO_2 quickly:
+- 10% - 1 sec
+- 30% - 90 seconds
+- 70% - 15 minutes
+** Chemical Analysis
+- AAS :: Atomic Absorption Spectroscopy
+- ICP-AES :: Inductively coupled plasma-atomic emission spectrometry
+- IC :: Ion chromatography
+all methods are done in commercial water quality labs...
+* Glossary
+- Calcite :: Octohedral *CO_{3}^{2-}* around *Ca^{2+}*. The *Ca^{2+}* ions can sometimes be replaced by other smaller cations or by *Sr^{2+}*. It can have more than 2000 different forms based on the impurities it has. Based on the geometry of the crystal. [fn:Huizing2003] Table 2.2 p8-9 [fn:Ford2007] (Do the impurities drive the geometries or the geometries drive the structures?)
+
+- Aragonite :: Unlike Calcite. it doesn't capture cations smaller than *Ca*. However, *Sr* and *U* can still substitute for *Ca*. It will readily dissolve/reprecipitate and expell the *Sr* and *U*. It's 8% smaller by volume than calcite - so if it reprecipitates as calcite it will make the area less porous [fn:Ford2007]
+
+- Tufa :: Calcite from terestrial plants that have rotted away. It's a loose framework [fn:Ford2007]
+
+- Travertine :: terrestrial calcite from inorganic or bacterial sources (typically underground or near hotsprings) [fn:Ford2007]
+
+- Dolomite :: Should be layers of *Ca^{2+}* cations and then layers of *Mg^{2+}* cations, but in reality it's all mixed up and has impurities (and is usually *Ca^{2+}* rich). So it captures even more elements (Zn, Fe, Mn, Na, Sr) than Calcite p11 [fn:Ford2007] . In particular it captures *Fe^{2+}* which gives it a pink color (esp when weathered). Dolomite exists on a continium with Calcite. Dolomite will affect the solubility of the limestone. Seems it dissolved worse than Calcite p28 [fn:Ford2007]. And yet *Mg^{2+}* bonds 20% stronger to *H_{2}O* than *Ca^{2+}*. *Mg* is more abundant in seawater where limestone forms (esp. hypersaline lagoons)
+
+- Dolomitization :: In brackish water you can have calcite dissolve but leaving dolomite behind (not entirely clear) p21[fn:Ford2007]
+
+- Carbonatites :: carbonates that are ignious in nature and may include rare earth minerals
+
+- Limestone :: precipitates everywhere. Mostly forms in shallow tropical/warm marine environments (ex: sea platform/ramps) and is mostly made of marine shells/skeletons (so it's texture can provide clues to it's origin - see Table 2.4 [fn:Ford2007]). Starts as muddy 40-80% porosity and then diagenisis consolidates it to solid rock w/ ~5% porosity (or less). If no diagenisis then it forms chalks or marls. Diagenisis is driven by meteoric waters that remove aragonite and reform into more and more compact calcite.
+
+- Primary Porosity :: porosity of the bare rock. If it's too high then the karst develops poorly
+
+- Secondary Porosity :: fractures that may conduct water.
+
+- Tertiary porosity :: conduits that take most of the water typically. They are fed primarily by surface features (geomorphology) doline/streamsines. Hence the geomorphology determines the hydrology.
+
+- Karst :: A hydrological system of typically carbonate or evaporites that is driven by dissolution unlike other lithologies. Dissolution happens along ground water flow paths
+
+- Paleokarst :: karst that's been cut off from the hydrological system
+
+- Relic Karst :: Karst outside the original development area. Usually referring to lifting or subsiding of the karst features.
+
+- Interstratal Karst :: Karst layers found among non karst layers..
+
+- Bedding planes :: ground water more readily penetrates an inferface between limestone and another rock (like shale) than just plain limestone
+
+- Irregular contact :: ie... wavey contact surfaces (instead of a plane) "undulatory" will more readily be eaten away by ground water.
+
+- Joints :: due to stress (ex: tectonic) these breaks will appear normal to the bedding planes. If they cross several beds then they're called *Master joints*. In deeper karst they are less permiable than bedding planes due to the compression.
+
+- Fracture-traces / Faults :: due to displacement of rock. Can be seen by satellite.. can form a river like structure in the karst
+
+- Throats :: Constriction on the irregular terrain that bring water down deep into the karst. These are log-normally distributed
+
+* Footnotes
+[fn:Williams2008] The role of the epikarst in karst and cave hydrogeology: a review
+Internation Journal of Speleology
+[fn:Tooth2003] Soil and karst aquider hydrological controls on the geochemical evolution of speleothem-forming drip waters, Crag Cave, southwest Ireland
+Journal of Hydrology v 273 p51-68
+[fn:Clark2015] Groundwater Geochemistry and Isotopes 2015 BOOK
+[fn:McDermott2004] Paleo-climate reconstruction from stable isotope variations in speleothems: a review
+Quaternary Science Reviews, v23 p 901-918
+[fn:Klimchouk1989] Evidence of hydrological significance of the epikarstic zone from sutdy of oxygen isotope somposition of water, Arabika massif, Western Caucasus
+Proceedings 10th International Congress of Speleology (Budapest) II 798-799 (from [fn:Williams2008] )
+[fn:Ford2007] Karst Hydrogeology and Geomorphology BOOK
+[fn:Huizing2003] Calcite: the Mineral with the Most Forms, Christian Weise Verlag, Munich, 114 pp.
+[fn:Drake1984] Theory and model for global carbonate solution by groundwater
+Groundwater as a Geomorphic Agent (ed. R. G. LaFleur), Allen & Unwin, London pp 210-26 
+[fn:Yuan2001] Guidebook for Ecosystems of Semiarid Karst in North China and Subtropical Karst in Southwest China
+IGCP 228
+Karst Dynamics Laboratory, Guilin 94 pp.
+*CAN'T FIND*
+[fn:Drake1975] The effect of climate on the chemistry of carbonate groundwater
+Water Rousources Research, 11, 958-62
+Is this working???
+#+END_slide
