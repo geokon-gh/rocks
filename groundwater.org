@@ -5,13 +5,304 @@
 #+INCLUDE: "../web/config.org"
 #+HTML_HEAD_EXTRA: <meta name="robots" content="noindex">
 
+
+* Hydrogeology
+
+** Force
+ - Mass :: resistance to being accelerated
+ - Weight :: gravitation force of an object
+ - Momentum :: mass * velocity
+ - 1 Newton :: force to accelerate /1 kg/ by /1 m/s^2/
+
+*** Newton's First Law
+ #+BEGIN_QUOTE
+ In the absense of forces - a point mass moves with constant velocity *v* (= zero acceleration)
+ #+END_QUOTE
+
+*** Newton's Second Law
+ #+BEGIN_QUOTE
+ The net force on a particle is *F=ma* \\
+ Where *a = dv/dt = d^{2}r/dt^{2}* \\
+ In other words, force is a change in momentum *p*. ie. *F= dp/dt*
+ #+END_QUOTE
+
+*** Newton's Third Law
+ #+BEGIN_QUOTE
+ If =Object1= exerts a force *F_{21}* on =Object2=\\
+ Then =Object2= always exerts an opposite force *F_{12}* \\
+ Such that *F_{12} = -F_{21}*
+ #+END_QUOTE
+
+*** Conservation of momentum
+ - Momentum :: mass * velocity
+Givens:
+- If you have a system with many particles *\alpha{} = [1,2 ... N]*
+- They extert an influence on each other particle *F_{\alpha{} \beta{}}*
+- They are under some external force *F^{ext}_{\alpha{}}*
+
+** Gravity
+The most basic force on every object. Depends on the masses of two particles and the distance btwn them
+#+BEGIN_QUOTE
+F_{gravity} = [ -GmM/r^{2} ] r^{^} \\
+#+END_QUOTE
+on earth, the mass of the earth is constant and the distance is the radius of the earth. So we simplify to one value  *g* = -GM/r^{2} /approx{} = 9.8 m/s/
+#+BEGIN_QUOTE
+F_{gravity} = -mgr^{^}
+#+END_QUOTE
+
+
+** Energy
+A parallel concept is the idea of Energy. Though it looks like momentum, it's actually a separate constraint. Energy is also often (though not always) conserved. Generally speaking, water flows from an area of high energy to an area of low energy.
+*** Work Energy
+When a *Force* applies onto a particle over a *distance* it imparts an energy
+Also known as the *Work-KE theorem*
+#+BEGIN_QUOTE
+\Delta{}T = T_{2}-T_{1} = \int{}_{1\rightarrow{}2} F\cdot{} /d/ r
+#+END_QUOTE
+Notice that this has no relation to the /time/!
+
+*** Gravitation potential energy
+When an object/particle is allowed to drop a height /h/, the force of gravity /F_{gravity}/ moves an object a distance /h/
+#+BEGIN_QUOTE
+F_{gravity} = -mgr^{^}
+#+END_QUOTE
+It drops a height *h* so it's simply /force \times{} height/
+#+BEGIN_QUOTE
+T_{potential} = F_{gravity} \times{} h = -mgh
+#+END_QUOTE
+
+*** Kinectic Energy
+Once the particle has dropped to /height = 0/ then the potential energy goes to zero. The energy is all turned into *kinetic energy* - a function of the particle's final velocity. We integrate and solve for the equivalent velocity.
+#+BEGIN_QUOTE
+F = ma = mg \\
+\int{}F = \int{}ma = \int{}mg \\
+\int{}m d^{2}x(t)/dt^{2} = \int{}mg \\
+m dx(t)/dt = mv_{0} + mgt \\
+dx(t)/dt = v_{0} + gt \\
+#+END_QUOTE
+This final velocity is naturally a function of time /t/. So we need to solve for the travel time to the ground. We integrate once again.
+#+BEGIN_QUOTE
+m dx(t)/dt = v_{0} + mgt \\
+\int{} m dx(t)/dt = \int{} v_{0} + mgt \\
+mx(t) = x_{0} + v_{0}t + mgt^{2}/2 \\
+#+END_QUOTE
+The distance traveled /x(t) = h/. For simplicity we assume the initial position and velocity are zero. /x_{0} = 0/ and /v_{0} = 0/. We solve for /t/
+#+BEGIN_QUOTE
+mx(t) = x_{0} + v_{0}t + mgt^{2}/2 \\
+mh = mgt^{2}/2 \\
+t = \radic{} 2h/g \\
+#+END_QUOTE
+We put this back into our equation for the final velocity and solve
+#+BEGIN_QUOTE
+dx(t)/dt = v_{0} + gt /...(v_{0} = 0)/\\
+dx(t)/dt = g(\radic{} 2h/g) = (\radic{} 2hg)\\
+#+END_QUOTE
+Now we construct the equation for the famous Kinetic Energy
+#+BEGIN_QUOTE
+T_{kinetic} = (1/2)mv^{2}
+#+END_QUOTE
+Notice how when we input the equation for the speed of an object that's falled a distance /h/ - we get back the potential energy
+#+BEGIN_QUOTE
+T_{kinetic} = (1/2)m(\radic{} 2hg)^{2} \\
+T_{kinetic} = mgh
+#+END_QUOTE
+While we assumed no initial velocity /v_{0}=0/ - this is not a necessary condition. If a particle is shot towards the ground with some starting velocity it will be under the influence of gravity for a shorter amount of time but it will  nonetheless aquire the same amount of energy (TODO: Prove this...)
+
+** Bernoulli's Equation
+Now we can describe the energy of particles in a fluid as a fluid flows through a medium. In a static system, if we assume the fluid conserves energy then the fluid's energy state at any point in it's flow path must conform to the following sum
+#+BEGIN_QUOTE
+T_{total} = T_{potential} + T_{kinetic} + T_{p-V Work} \\
+T_{potential} = ghm \\
+T_{kinetic} = mv^{2]/2 \\
+T_{p-V Work} = m \int{} dp/\rho{}
+#+END_QUOTE
+The first two terms have already been introduced, while the last term represents the work done on the fluid by any difference in pressure along the flow line. If the fluid flows from an area of low pressure to one of high pressure then it need to expend energy (ie. "climb up hill") against the force of pressure pushing it back
+- p :: pressure (Force / Area - Newtons / m^{2})
+- \rho{} :: density (mass / Volume - kg / m^{3})
+If the fluid is incomprehisible (such as in the case of liquids) then /\rho{}/ is not a function of pressure /p/ and the integral is of the most basic type
+#+BEGIN_QUOTE
+T_{p-V Work} = m \int{} dp/\rho{} = m (p_{i} - p_{start}) / \rho{}
+#+END_QUOTE
+Where there is a starting pressure /p_{start}/ and /p_{i}/ is the pressure at a particular point along the flow path. The resulting total energy can be written as
+#+BEGIN_QUOTE
+T_{total} = ghm + mv^{2]/2 + m (p_{i} - p_{start}) / \rho{}
+#+END_QUOTE
+However instead of reasoning about the energy of a bit of fluid at some point /i/ of mass /m/ we instead find it easier to discuss it in terms of *fluid potential* /\Phi{}/ - which is the /energy per unit mass/
+#+BEGIN_QUOTE
+\Phi{} = gh + v^{2}/2 + (p_{i} - p_{start}) / \rho{}
+#+END_QUOTE
+For flow in ground water the velocity is generally quite small, so the kinetic term is normally dropped
+#+BEGIN_QUOTE
+\Phi{} = gh + (p_{i} - p_{start}) / \rho{}
+#+END_QUOTE
+
+** Hydraulic Head
+As a fluid flows downward the pressure it experiences will typically increase under the weight of the water above, however the fluid potential will remain the same.
+
+The fluid potential at its starting point will be:
+#+BEGIN_QUOTE
+\Phi{}_{start} = gh + (p_{start} - p_{start})/\rho{} = gh \\
+/If this is water then this will be at the water's surface and/ p_{start} = p_{atmosphere}
+#+END_QUOTE
+It then flows down some distance /d/ and we recalculate the fluid potential:
+#+BEGIN_QUOTE
+\Phi{}_{d} = g(h-d) + (p_{d} - p_{start})/\rho{}
+#+END_QUOTE
+/p_{d}/ is the pressure at the new location. This pressure has increased by the added weight above. This is the density of the fluid times the height: /\rho{}g(h-d)/. Looking at the units it's clear this gives a Pressure: /kg/m^3 \times{} m = kg/m^{2}/. The total pressure is just the sum of the previous pressure and the increase
+#+BEGIN_QUOTE
+p_{i} = p_{start} + \rho{}gd
+#+END_QUOTE
+We recalculate the fluid potential
+#+BEGIN_QUOTE
+\Phi{}_{d} = g(h-d) + (p_{start} + \rho{}gd - p_{start})/\rho{} = g(h-d) + gd = gh
+#+END_QUOTE
+And we see that the resulting energy remains /gh/.
+
+However it's often useful to keep thinking of the fluid potential as consistenting of these two parts.
+#+BEGIN_QUOTE
+\Phi{}_{d} = \Phi{}_{elevation} + \Phi{}_{pressure}
+gh = g(h-d) + gd
+#+END_QUOTE
+The two factors are called the /h-d/ *elevantion head* and /d/ *pressure head*.
+
+The result tells us that the total /fluid potential/ anywhere in a slow stream always remains a function of the height of the very top of the fluid. This top starting point is not an arbitrarily chosen point and must be where the fluid flow begins (in our case, the water's surface). This starting height /h/ is the *hydraulic head*.
+
+A more complete notation of the *total head* for fluids at velocity is
+#+BEGIN_QUOTE
+h_{T} = h_{z} + h_{p} + h_{v}\\
+h_{z} - /elevation head/ \\
+h_{p} - /pressure head/ \\
+h_{v} - /velocity head/ \\
+#+END_QUOTE
+
+** Darcy's Law
+What induces a fluid to start flowing in a dynamic difference in energy between two points. Particles move from an area of high energy to an area of low energy. In other words from an area of high head to low head. The higher the difference the faster the flow. This is analogous to electric voltage
+
+#+BEGIN_QUOTE
+v = -K dh/dt
+#+END_QUOTE
+- /v/ :: the *specific discharge*. This to fluid's cumulative macro-level velocity. On the micro inter-grain level the particles of fluid have much longer/torturous flow paths and their velocity can be much higher.
+- /h/ :: the /hydraulic head/
+- /K/ :: the *hydraulic conductivity* is a property of the medium and the fluid traveling through it
+The parameter /K/ can be further broken up into properties of the just the medium and those of just the fluid.
+#+BEGIN_QUOTE
+K = k\rho{}g/\mu{}
+#+END_QUOTE
+- /\rho{}g/ :: weight per unit volume of the fluid
+- /\mu{}/ :: dynamic viscocity of the fluid
+- /k/ :: *(specific/intrinsic) permiability* (in meters^{2}) of the medium
+
+Both /K/ and /k/ are used... where the permiability /k/ is useful because it remains the same regardless of if you have water or some mixture of gas/oil/water flowing. /K/ values are implied to be about water. Values vary in 13 orders of magnitutde - so values are no very sensitive. 
+
+If /K/ is constant in a geological formation then we say it's *homogenous* - otherwise *heterogenous*. Most common is layers of different rock/sediment - called /layered heterogeneity/. Other forms are fault induced /discontinuous heterogeneity/ and gradually changing /trending heterogeneity/ (deltas, alluvial fans, glacial outwash). Normally even relatively homogenous geological formations will typically have internal variations in /K/ on the order of 1-2 orders of magnitude (formations with monomodal variation are called *uniform*) p31-32 [fn:Freeze]
+
+/K/ can also vary based on the flow direction if the medium is *anisotropic* (as opposite to unform flow in all directions - *isotropic*). Interestingly enough, /layered heterogeneity/ will lead to *anisotropy*.
+
+
+
+
+
+
+
+
+** Other
+
+So in the simple case, pressures are simply the weight of water above a point (at some height  + atomospheric pressure
+#+BEGIN_QUOTE
+p = \rho{}(i - \phi{} + p_{atmosphere}
+#+END_QUOTE
+#+BEGIN_QUOTE
+\Delta{}U = Heat - Work \\
+\Delta{}U = \delta{}Q - PdV
+- Q :: heat is in Joules (like Energy) or Newton-meters
+- P :: Pressure external to the system - Force/Area .. Newtons per m^{2}
+- dV :: Change in Volume - m^{3}
+- PdV :: .. also in Newton meters
+#+END_QUOTE
+The *PdV* relationship is hard to reason about. Generally energy is by definition:
+#+BEGIN_QUOTE
+T = 1/2 mv^{2}
+#+END_QUOTE
+The change in energy in a small incriment of time as .. (using the product rule)
+#+BEGIN_QUOTE
+dT/dt = (1/2)m(dv/dt\cdot{}v + v\cdot{}dv/dt) = m dv/dt \cdot{} v
+#+END_QUOTE
+Since /F=ma = mdv/dt/ we can write out a small change in energy as a function of small distance /dr/
+#+BEGIN_QUOTE
+dT/dt = F\cdot{}v \\
+dT= F\cdot{}dr
+#+END_QUOTE
+So /Energy/ is /Force/ \times{} /distance/ \\
+An easy way to visualize it is to imagine a cylinder at constant pressure, like a bicyle pump. If gass is added and the pump moves against the external /Pressure/ of the surrounding air, then the top end of the cylinder moves a distance  proportional to the change in /Volume/ - hence the resulting /Work/.
+
 * Water's journey through the rock
 
 ** Rain
 What we try to measure. *\shy{}^{18}O* is based on weather "events". Primarily the monsoon..
-** Soil (Vadose)
-- soil is about 40% porous. Has bound water
-*** Dissolved CO_2
+
+For every 75cm of rainfall:
+- 55cm evaporates back to the atmosphere
+- 20cm goes into the rivers
+
+Water that is in ice/snow/puddles is in *depression storage* - otherwise it goes into streams
+
+Land sloping to a discharge point - *catchment* / *drainage baisin*. The equivalent in the subsurface is the *ground water basin* which is surrounded by *ground water divides*.
+
+*** Canopy
+
+- The vegitation canopy will have a storage capacity which catches 8-30% of the rain
+- A wet canopy reduces evapotranspiration (by about 10%)
+- The interception rate will decrease as the rain progresses (as the canopy becomes water-logged)
+
+
+*** Transpiration
+*Transpiration* vegitation pulls water from the soil up by osmosis and makes it available for evaporation. This accounts for most of the vapor loss of a drainage basin. Hence a pond qith aquatic plants will loose water at a similar rate as an uncovered pond.
+
+- wilting point :: when the surface tension of the water in the soil > osmotic pressure
+- Phreatophytes :: plants that grow roots to the water table (ex: in the desert)
+
+*** Evaporation
+- absolute humidity :: grams of water / cubic meter of air
+- saturation humidity :: max amount of humidity (function of temperature)
+- relative humidity :: ratio of absolute/saturation humidity ( at 100% evaporation ceases
+- dew point :: the temp at which at a given relative humidity you will start to get condensation (ie. 100% relative humidity)
+
+evaporation cools a surface while condensation heats it [590 cal/gram]
+
+*** Evapotranspiration
+We lump transpiration and evaporation together b/c they're difficult to decouple
+
+*** EUD - Effective uniform depth of precipitation
+Ways of estimating the average rainfall in a drainage basin...
+
+In the case of a karst tower this is greatly simplified and can be estimated with one rain gauge
+
+*** Thornthwaite 1944
+an estimate of the potential evapotranspiration (how much could evaporate)
+
+- Latent heat of vaporization :: *H_{v}* = 597.3 - 0.564T calories/gram (of water) (T = temp in Celcius)
+- Latent heat of fusion :: 79.7 cal/gram
+- Sublimation :: 597.3 + 79.7 = 677 cal/gram
+
+TODO
+
+*** Infiltration
+Once rain reaches the ground it starts to infiltrate
+- up to a *infiltration capacity* (cm/hr)
+- this capacity drops over time b/c capillary actions drops and the soil swells up
+- It eventually reaches a steady state
+Horton 1933 1940
+
+Once the infiltration capacity has been exceeded, the water starts to flow on the surface by *Horton overland flow*
+
+** Vadose
+- water flowing here is called *interflow* and goes down under *gravity drainage* (flows towards a stream normally)
+- If the water comes out before a stream then it's called *throughflow* and the remaining surface flow to the steam is the *return flow*
+- has both bound water and air
+
+*** Soil (Vadose)
+- soil is about 40% porous
+**** Dissolved CO_2
 - CO_2 accumulates b/c diffusion is retarded by friction of torturous path ways p50 [fn:Ford2007] (so it's a semi-open system..)
 - 17-31% volume available for gas storage [fn:Drake1984]
 - plants respire approximately 40% of the CO_2 they extract in their roots. roots = CO_2 pumps
@@ -19,7 +310,7 @@ What we try to measure. *\shy{}^{18}O* is based on weather "events". Primarily t
 - Final CO_2 partial pressure is determined by water (20%) and temperature (50%) [fn:Drake1975]
 - Organic matter is also brought down with the water and decomposes within the karst (which complicates resulting concentrations)
 - Water get's saturated with CO_{2} .. probably.. most of the time
-** Epikarst (Vadose)
+*** Epikarst (Vadose)
 The immediate face of the limestone where the majority of the weathering happens. Existing fissures preferrencially continue to dissolve - so weathering is not uniform
 - 70% of dissolution happens here (hence fissures narrow as you go further down)
 - 10-30% porosity. Can hold the bulk of the water in a suspended aquifer
@@ -29,7 +320,7 @@ The immediate face of the limestone where the majority of the weathering happens
 - Closed system - so the CO_{2} is limited to what came in with the water. This leads to a max 25mg/L of calcium carbonate (open system is 55mg/L)
 
 *NOTE* Not always true.. if you have strong dry seasons and chalky porous limestone then you can have *case hardening* and so it's actually less permiable near the surface.
-** Transit zone  (Vadose)
+*** Transit zone  (Vadose)
 - primary/secondary/tertiary porosity.. 
 - unweathered rock - so much less permiable - this differential makes the epikarst develop a suspended aquifer of sorts
 - less than 2% porosity (matrix flow)
@@ -39,8 +330,25 @@ The immediate face of the limestone where the majority of the weathering happens
 - There can be a lot of lateral flow through the cave
 
 *Note* Sometimes entirely missing.. like in Shilin Yunnan. Just epikarst and water table [fn:Williams2008]
+
+
 ** Phreatic zone
 The water table .. below the cave.
+The outer layer is the *capillary fringe* followed by the *zone of saturation*.
+In the ground water you have *ground water flow* which will go to a stream bed in *baseflow*
+
+The cumulative flow in the stream is the *runoff*
+
+*** Baseflow recession
+As the available water dcreases the flow rate drops along an exponential curve
+#+BEGIN_QUOTE
+Q(t) = Q_{0}e^{at}
+#+END_QUOTE
+Where *Q_{0}* is the flow rate at the start time 0.\\
+Flow rates are in m^{3}/s
+
+- /baseflow/ into a river is *gaining* or *effluent*
+- /baseflow/ out of a river is *losing* or *influent*
 
 *** TODO Has been modeled before
 [fn:Clemens1999] Simulation of the development of karst squifers: role of the epikarst
@@ -313,4 +621,6 @@ Karst Dynamics Laboratory, Guilin 94 pp.
 [fn:Drake1975] The effect of climate on the chemistry of carbonate groundwater
 Water Rousources Research, 11, 958-62
 Is this working???
+
+[fn:Freeze] Groundwater BOOK
 #+END_slide
