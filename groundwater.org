@@ -15,16 +15,16 @@
  - 1 Newton :: force to accelerate /1 kg/ by /1 m/s^2/
 
 *** Newton's First Law
- #+BEGIN_QUOTE
- In the absense of forces - a point mass moves with constant velocity *v* (= zero acceleration)
- #+END_QUOTE
+#+BEGIN_QUOTE
+In the absense of forces - a point mass moves with constant velocity *v* (= zero acceleration)
+#+END_QUOTE
 
 *** Newton's Second Law
- #+BEGIN_QUOTE
- The net force on a particle is *F=ma* \\
- Where *a = dv/dt = d^{2}r/dt^{2}* \\
- In other words, force is a change in momentum *p*. ie. *F= dp/dt*
- #+END_QUOTE
+#+BEGIN_QUOTE
+The net force on a particle is *F=ma* \\
+Where *a = dv/dt = d^{2}r/dt^{2}* \\
+In other words, force is a change in momentum *p*. ie. *F= dp/dt*
+#+END_QUOTE
 
 *** Newton's Third Law
  #+BEGIN_QUOTE
@@ -176,13 +176,14 @@ h_{v} - /velocity head/ \\
 #+END_QUOTE
 
 ** Darcy's Law
-What induces a fluid to start flowing in a dynamic difference in energy between two points. Particles move from an area of high energy to an area of low energy. In other words from an area of high head to low head. The higher the difference the faster the flow. This is analogous to electric voltage
+What induces a fluid to start flowing in a dynamic difference in energy between two points. Particles move from an area of high energy to an area of low energy. In other words from an area of high head to low head. The higher the energy gradient (change in energy per unit distance) the higher the fluid's velocity
 
 #+BEGIN_QUOTE
-v = -K dh/dt
+v = -K dh/dl
 #+END_QUOTE
 - /v/ :: the *specific discharge*. This to fluid's cumulative macro-level velocity. On the micro inter-grain level the particles of fluid have much longer/torturous flow paths and their velocity can be much higher.
 - /h/ :: the /hydraulic head/
+- /l/ :: distance
 - /K/ :: the *hydraulic conductivity* is a property of the medium and the fluid traveling through it
 The parameter /K/ can be further broken up into properties of the just the medium and those of just the fluid.
 #+BEGIN_QUOTE
@@ -198,13 +199,39 @@ If /K/ is constant in a geological formation then we say it's *homogenous* - oth
 
 /K/ can also vary based on the flow direction if the medium is *anisotropic* (as opposite to unform flow in all directions - *isotropic*). Interestingly enough, /layered heterogeneity/ will lead to *anisotropy*.
 
+*** Layered heterogeneity
+Using Darcy's law, we can look at water flowing vertically and horizontally through N homogenous layers of different conductivity K_{i}.
 
+We summarize the *vertical flow* in one global conductivity term. Each layer is of depth /d_{i}}/, has a conductivity /K_{i}/ and an associated change in hydraulic head /\Delta{}h_{i}/ (it can be measured with a /piezometer/ - ie. drilling a shaft to the layer and see how high the water rises). The velocity across all the layers must remain the same if this is a constant ongoing process (otherwise fluid will pool indefinitely in some middle layer - which doesn't make physical sense). Hence
 
+#+BEGIN_QUOTE
+v = K_{1}\Delta{}h_{1}/d_{1} = K_{2}\Delta{}h_{2}/d_{2} = .. = K_{n}\Delta{}h_{n}/d_{n} = K_{z}\Delta{}h_{z}/d_{z}
+#+END_QUOTE
 
+The global depth and change in head is /d/ and /\Delta{}h/. And we wish to solve for a global vertical conductivity /K_{z}/. (/z/ being the vertical direction here)
 
+#+BEGIN_QUOTE
+K_{z} = vd/\Delta{}h \\ 
+ = vd/[\Delta{}h_{1}+\Delta{}h_{2}+..+\Delta{}h_{n}] \\
+ = vd/[vd_{1}/K_{1} + vd_{2}/K_{2} + ... + vd_{n}/K_{n}]
+#+END_QUOTE
 
+by contrast the *horizontal flow* through the same layers exhibits an effective conductivity that is simply a weighted sum based on how much space each layer takes up
+#+BEGIN_QUOTE
+K_{x} = \sum{} K_{i}d_{i} / d 
+#+END_QUOTE
 
+The net effect is that multiple homogenous isotropic layers produce a nonhomogenous anisotropic whole.
 
+*** 3D Darcy
+Because the conductivity K varies in direction, you end up with a second rank symmetric tensor known as the *hydraulic conductivity tensor*
+#+BEGIN_QUOTE
+v_{x} = - K_{xx} \partial{}h/\partial{}x - K_{xy} \partial{}h/\partial{}y - K_{xz} \partial{}h/\partial{}z \\
+v_{y} = - K_{yx} \partial{}h/\partial{}x - K_{yy} \partial{}h/\partial{}y - K_{yz} \partial{}h/\partial{}z \\
+v_{z} = - K_{zx} \partial{}h/\partial{}x - K_{zy} \partial{}h/\partial{}y - K_{zz} \partial{}h/\partial{}z \\
+#+END_QUOTE
+then things get complicated... p36 [fn:Freeze]
+*TODO* Look into further if it's relevant 
 ** Other
 
 So in the simple case, pressures are simply the weight of water above a point (at some height  + atomospheric pressure
