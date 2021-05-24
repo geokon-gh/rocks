@@ -144,26 +144,26 @@ The fluid potential at its starting point will be:
 \Phi{}_{start} = gh + (p_{start} - p_{start})/\rho{} = gh \\
 /If this is water then this will be at the water's surface and/ p_{start} = p_{atmosphere}
 #+END_QUOTE
-It then flows down some distance /d/ and we recalculate the fluid potential:
+It then flows down some distance /\psi{}/ and we recalculate the fluid potential:
 #+BEGIN_QUOTE
-\Phi{}_{d} = g(h-d) + (p_{d} - p_{start})/\rho{}
+\Phi{}_{\psi{}} = g(h-\psi{}) + (p_{\psi{}} - p_{start})/\rho{}
 #+END_QUOTE
-/p_{d}/ is the pressure at the new location. This pressure has increased by the added weight above. This is the density of the fluid times the height: /\rho{}g(h-d)/. Looking at the units it's clear this gives a Pressure: /kg/m^3 \times{} m = kg/m^{2}/. The total pressure is just the sum of the previous pressure and the increase
+/p_{\psi{}}/ is the pressure at the new location. This pressure has increased by the added weight above. This is the density of the fluid times the height: /\rho{}g(h-\psi{})/. Looking at the units it's clear this gives a Pressure: /kg/m^3 \times{} m = kg/m^{2}/. The total pressure is just the sum of the previous pressure and the increase
 #+BEGIN_QUOTE
-p_{i} = p_{start} + \rho{}gd
+p_{i} = p_{start} + \rho{}g\psi{}
 #+END_QUOTE
 We recalculate the fluid potential
 #+BEGIN_QUOTE
-\Phi{}_{d} = g(h-d) + (p_{start} + \rho{}gd - p_{start})/\rho{} = g(h-d) + gd = gh
+\Phi{}_{\psi{}} = g(h-\psi{}) + (p_{start} + \rho{}g\psi{} - p_{start})/\rho{} = g(h-\psi{}) + g\psi{} = gh
 #+END_QUOTE
 And we see that the resulting energy remains /gh/.
 
 However it's often useful to keep thinking of the fluid potential as consistenting of these two parts.
 #+BEGIN_QUOTE
-\Phi{}_{d} = \Phi{}_{elevation} + \Phi{}_{pressure}
-gh = g(h-d) + gd
+\Phi{}_{d} = \Phi{}_{elevation} + \Phi{}_{pressure}\\
+gh = g(h-\psi{}) + g\psi{}
 #+END_QUOTE
-The two factors are called the /h-d/ *elevantion head* and /d/ *pressure head*.
+The two factors are called the /\psi{}/ *pressure head* and the /h-\psi{}/ *elevation head*.
 
 The result tells us that the total /fluid potential/ anywhere in a slow stream always remains a function of the height of the very top of the fluid. This top starting point is not an arbitrarily chosen point and must be where the fluid flow begins (in our case, the water's surface). This starting height /h/ is the *hydraulic head*.
 
@@ -232,6 +232,9 @@ v_{z} = - K_{zx} \partial{}h/\partial{}x - K_{zy} \partial{}h/\partial{}y - K_{z
 #+END_QUOTE
 then things get complicated... p36 [fn:Freeze]
 *TODO* Look into further if it's relevant 
+
+
+
 ** Other
 
 So in the simple case, pressures are simply the weight of water above a point (at some height  + atomospheric pressure
