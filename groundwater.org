@@ -233,8 +233,47 @@ v_{z} = - K_{zx} \partial{}h/\partial{}x - K_{zy} \partial{}h/\partial{}y - K_{z
 then things get complicated... p36 [fn:Freeze]
 *TODO* Look into further if it's relevant 
 
+** Unsaturated Flow
+- V_{T} :: total unit volume
+- V_{s} :: solid volume
+- V_{s} :: void volume
+*** Porosity
+#+BEGIN_QUOTE
+n = V_{v}/V_{T}\\
+/generally expressed as a percentage../
+#+END_QUOTE
+Where *primary porosity* is due to the soil/rock matrix and *secondary porosity* is due to dissolving or fracturing.
+However this is unfortunately only vaguely related to /hydraulic conductivity..
+*** Void Ratio
+Is an alternative way of looking at the same thing
+#+BEGIN_QUOTE
+e = V_{v}/V_{s}\\
+\therefore{}\\
+e = n/(1-n)
+#+END_QUOTE
+*** Moisture Content
+Once water has entered the soil we add a new term
+- V_{w} :: the volume of water
+the *moisture content* is ratio of water to the total volume
+#+BEGIN_QUOTE
+\theta{} = V_{w}/V_{T}
+#+END_QUOTE
+When water fills all the voids (/V_{w}/ -> /V_{v}/)this term goes to /n/
+*** Water table
+Is defined to start where:
+- /\psi{} = 0/ 
+- the fluid pressure /p = p_{atmosphere}/ or /p=0/ (if using gauge pressure)
+- the surface of a small open well
+Above this (where /\psi{}<0/) the capillary action creates a /negative pressure head \psi{}/ called the *tension head* or *suction head*. For part of this (in fine-grained soils) the negative pressure is enough to keep the soil saturated (/\theta{} = n/) in a *capillary fringe*. The effect amount /\psi{}_{a}/ is known as the *air entry pressure* or *bubbling pressure* p41 [fn:Freeze]
 
+*** Unsaturated zone
+Above the capillary fringe as the negative pressure head /\psi{}/ keeps decreasing the moisture content keeps falls as well. This has two effect. First it makes the conductivity of the soil decrease as  water has more trouble flowing from grain to grain. And second, the less moisture the smaller the miniscus around the grains and the higher the surface tension. This exaserbates the negative pressure head.
 
+Further complicating the issue, the /\theta{} vs \psi{}/ relationship is also hysteretic. A drying soil will in effect extend out further. At a given negative pressure head (ie. distance above water table) a wetting soil will have much less moisture content than for a drying soil. Similarly, the drying soil will have a much high conductivity than a wetting one. p42 [fn:Freeze] (This needs double checking if important)
+
+Thus the conductivity /K/ is also a function of the head /\psi{}/ (as well as some time component)
+
+*** 
 ** Other
 
 So in the simple case, pressures are simply the weight of water above a point (at some height  + atomospheric pressure
