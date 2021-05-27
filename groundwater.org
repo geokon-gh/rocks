@@ -264,16 +264,79 @@ Is defined to start where:
 - /\psi{} = 0/ 
 - the fluid pressure /p = p_{atmosphere}/ or /p=0/ (if using gauge pressure)
 - the surface of a small open well
+*** Capilary Fringe
 Above this (where /\psi{}<0/) the capillary action creates a /negative pressure head \psi{}/ called the *tension head* or *suction head*. For part of this (in fine-grained soils) the negative pressure is enough to keep the soil saturated (/\theta{} = n/) in a *capillary fringe*. The effect amount /\psi{}_{a}/ is known as the *air entry pressure* or *bubbling pressure* p41 [fn:Freeze]
 
+Because the pressure head is negative, the fluid pressure is below atmosphere. So while the water can move within the fringe (and the subsequent unsaturated zone) it can never flow out to the atomosphere through anything like a borehole, seepage face or spring. It can only leave by evaporation or transpiration.
 *** Unsaturated zone
 Above the capillary fringe as the negative pressure head /\psi{}/ keeps decreasing the moisture content keeps falls as well. This has two effect. First it makes the conductivity of the soil decrease as  water has more trouble flowing from grain to grain. And second, the less moisture the smaller the miniscus around the grains and the higher the surface tension. This exaserbates the negative pressure head.
 
 Further complicating the issue, the /\theta{} vs \psi{}/ relationship is also hysteretic. A drying soil will in effect extend out further. At a given negative pressure head (ie. distance above water table) a wetting soil will have much less moisture content than for a drying soil. Similarly, the drying soil will have a much high conductivity than a wetting one. p42 [fn:Freeze] (This needs double checking if important)
 
-Thus the conductivity /K/ is also a function of the head /\psi{}/ (as well as some time component)
+Thus, in the unsaturated zone where /\psi{} < \psi{}_{a}/ the conductivity and moisture, /K/ and /\theta{}/ are functions the head /\psi{}/ (as well as some time component). This has implications for water flowing from areas of higher head to lower head and hence Darcy's Law is modified
+#+BEGIN_QUOTE
+v_{x} = K(\psi{}) d{}h/\d{}l
+#+END_QUOTE
+We already know that since the partial pressure /\psi{}/ is a function of the head /h/, as the head changes the partial pressure changes as well. Now we also see that the conductivity and moisture content will change as well
 
-*** 
+Note that if you have a highly dynamic system and you have air pressure that builds up in the soil, then you may need to consider a more complex mutliphase flow model that takes in to account the movement of the air in the soil as well.
+
+*TODO*: This part is a bit muddled..
+
+- aquifer :: saturated permeable geological unit that can transmit significant amounts of water -- unconsolidated sand/gravel | permiable sedimentary rock (sandstone/limestome) | fractures volcanic/crystalline rock
+- aquiclude :: an aquifer that can't transmit significant amounts of water
+- aquitard :: somewhere in between... -- clay | shale |  dense crystalline rock
+These things can ofcourse intermix..
+
+*** Compressability of water
+is a property of material (both the liquid and soil) and it is the ratio of the change in volume, *strain*, under an applied *stress*. The stress on water is the pressure and a change in pressure (/dp/) induces a fraction change in volume (/dV_{w{/V_{w}/) ... p52 [fn:Freeze]
+#+BEGIN_QUOTE
+\beta{}_{water} = -(dV_{w}/V_{w})/dp
+#+END_QUOTE
+So /\beta{}/ is the slope of the line relating strain/pressure to stress/change-in-volume. We assume it's mostly constant in the rages of interest at \sim{} 4.4 \times{} 10^{-10} m^{2}/N
+
+You can also express this in terms of a change in the water's density /\rho{}/
+#+BEGIN_QUOTE
+\beta{}_{water} = (d\rho{}/\rho{})/dp
+#+END_QUOTE
+Which we can integrate to solve for the current density. This is the *equation of state* (think intro thermo /pV = nRT/)
+#+BEGIN_QUOTE
+\rho{} = \rho{}_{0}e^{\beta{}(p-p_{0})}
+#+END_QUOTE
+where /\rho{}_{0}/ is the a priori known density at pressure /p_{0}/. If /p_{0}/ is atmospheric pressure and we work with gauge pressures then the term can be dropped
+#+BEGIN_QUOTE
+\rho{} = \rho{}_{0}e^{\beta{}p}
+#+END_QUOTE
+So if /\beta{} = 0/ then /\rho{}=\rho{}_{0}/ and the fluid is called *incompressible*
+
+*** Effective Stress
+We want to similarly look at the compressability of the soil. However the stress needs to be observed indirectly. When we look at the total stress at a certain depth of our porous medium. There is the stress downward from the overlaying soil and then push back up (canceling out the force downward) is the pressure of the water as well as the *effective stress* of the material.
+#+BEGIN_QUOTE
+\sigma{}_{T} = \sigma{}_{e} + p
+#+END_QUOTE
+Here the total stress /\simga{}_{T}/ is near-constant b/c the overlaying mass of soil and water remains mostly constant in mass
+#+BEGIN_QUOTE
+d\sigma{}_{T} = d\sigma{}_{e} + dp \\
+0 = d\sigma{}_{e} + dp \\
+d\sigma{}_{e} = -dp \\
+#+END_QUOTE
+Which tells us that the stress on the material is proportional to the decrease in the pressure of the water. This conclusion is intuitive. Remember that /p=\rho{}g\psi{}/ and /\psi{}/ is relative to the hydraulic head /h/. So at the head changes the stress changes
+#+BEGIN_QUOTE
+d\sigma{}_{e} = -dp = -\rho{} g d\psi{} = - p g dh
+#+END_QUOTE
+
+*** Compressability of soil
+Now that we have the stress on the soil characterized we can write out the compressability
+#+BEGIN_QUOTE
+\alpha{} = (-dV_{T}/V_{T})/d\sigma_{e}
+#+END_QUOTE
+Note that here we are looking at the medium's total volume  /V_{T}/, and it's composed of solid volume /V_{s}/ and a void volume /V_{v}/. The solid material mostly does not change. However under stress the material can rearrange itself to decrease it's void ratio /e/. So bearing in mind that /V_{T} =  V_{s} + V_{v}/ we can rewrite in terms of /e/
+#+BEGIN_QUOTE
+\alpha{} = (-de/(1+e_{0})/d\sigma_{e}
+#+END_QUOTE
+This is called *consolidation* it is often irreversibly or partially irreversibly. Furthermore, /alpha{}/ is nonlinear though we can sometimes approximate it with a linear term (see Table 2.5 p55) [fn:Freeze]
+
+Furthermore these relationships do not hold in the unsaturated zone where the relationship is further complicated as you need to consider the moisture content and negative pressure heads
 ** Other
 
 So in the simple case, pressures are simply the weight of water above a point (at some height  + atomospheric pressure
